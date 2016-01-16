@@ -40,6 +40,8 @@
 		AB2437571C43C7D700FD51D9 /* menu_item_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437431C43C7D700FD51D9 /* menu_item_on@2x.png */; };
 		AB24375A1C43C82D00FD51D9 /* TopController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437591C43C82D00FD51D9 /* TopController.m */; };
 		ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB01C4A611B0018C8B3 /* Env.plist */; };
+		ABE2BBB51C4A68710018C8B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB31C4A68710018C8B3 /* Main.storyboard */; };
+		ABE2BBBA1C4A6E590018C8B3 /* PanelBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */; };
 		B12E279F172567B40090B797 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E279E172567B40090B797 /* QuartzCore.framework */; };
 		B160F98017292EC900F6A332 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F96E17292EC900F6A332 /* FMDatabase.m */; };
 		B160F98117292EC900F6A332 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F97017292EC900F6A332 /* FMDatabaseAdditions.m */; };
@@ -105,6 +107,9 @@
 		AB2437581C43C82D00FD51D9 /* TopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopController.h; path = IdeaCards/TopController.h; sourceTree = SOURCE_ROOT; };
 		AB2437591C43C82D00FD51D9 /* TopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopController.m; path = IdeaCards/TopController.m; sourceTree = SOURCE_ROOT; };
 		ABE2BBB01C4A611B0018C8B3 /* Env.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Env.plist; sourceTree = SOURCE_ROOT; };
+		ABE2BBB41C4A68710018C8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IdeaCards/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		ABE2BBB61C4A6A4E0018C8B3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = IdeaCards/BridgingHeader.h; sourceTree = "<group>"; };
+		ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelBaseController.swift; sourceTree = "<group>"; };
 		B12E279E172567B40090B797 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B160F96D17292EC900F6A332 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		B160F96E17292EC900F6A332 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -170,6 +175,8 @@
 		AB2437131C43C77500FD51D9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AB2437101C43C76B00FD51D9 /* AppDelegate.h */,
+				AB2437111C43C76B00FD51D9 /* AppDelegate.m */,
 				AB2437141C43C77500FD51D9 /* Controller */,
 				AB24371B1C43C77500FD51D9 /* Model */,
 			);
@@ -180,6 +187,7 @@
 		AB2437141C43C77500FD51D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */,
 				AB2437581C43C82D00FD51D9 /* TopController.h */,
 				AB2437591C43C82D00FD51D9 /* TopController.m */,
 				AB2437151C43C77500FD51D9 /* EditController.h */,
@@ -239,6 +247,14 @@
 				AB2437331C43C7D700FD51D9 /* iTunesArtwotk.png */,
 			);
 			path = Icon;
+			sourceTree = "<group>";
+		};
+		ABE2BBB21C4A68020018C8B3 /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2BBB31C4A68710018C8B3 /* Main.storyboard */,
+			);
+			name = UserInterfaces;
 			sourceTree = "<group>";
 		};
 		B1042DD11726ACCC0088A47C /* iCarousel */ = {
@@ -386,8 +402,7 @@
 		B18954E8171EBCC700B205B4 /* IdeaCards */ = {
 			isa = PBXGroup;
 			children = (
-				AB2437101C43C76B00FD51D9 /* AppDelegate.h */,
-				AB2437111C43C76B00FD51D9 /* AppDelegate.m */,
+				ABE2BBB21C4A68020018C8B3 /* UserInterfaces */,
 				AB2437131C43C77500FD51D9 /* Classes */,
 				B18954E9171EBCC700B205B4 /* Supporting Files */,
 				AB24372E1C43C7D700FD51D9 /* Images */,
@@ -399,6 +414,7 @@
 		B18954E9171EBCC700B205B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ABE2BBB61C4A6A4E0018C8B3 /* BridgingHeader.h */,
 				AB2437281C43C7CE00FD51D9 /* Default-568h@2x.png */,
 				AB2437291C43C7CE00FD51D9 /* Default.png */,
 				AB24372A1C43C7CE00FD51D9 /* Default@2x.png */,
@@ -440,6 +456,7 @@
 		B18954D7171EBCC700B205B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Nakai Kenta";
 				TargetAttributes = {
@@ -454,6 +471,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B18954D6171EBCC700B205B4;
 			productRefGroup = B18954E0171EBCC700B205B4 /* Products */;
@@ -477,6 +495,7 @@
 				AB2437481C43C7D700FD51D9 /* menu_base.png in Resources */,
 				ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */,
 				B18954ED171EBCC700B205B4 /* InfoPlist.strings in Resources */,
+				ABE2BBB51C4A68710018C8B3 /* Main.storyboard in Resources */,
 				AB2437491C43C7D700FD51D9 /* menu_base@2x.png in Resources */,
 				AB2437441C43C7D700FD51D9 /* Icon.png in Resources */,
 				AB24372B1C43C7CE00FD51D9 /* Default-568h@2x.png in Resources */,
@@ -568,6 +587,7 @@
 				B160F98517292EC900F6A332 /* FMResultSet.m in Sources */,
 				B1CC8636173BD46100AC49BB /* AwesomeMenu.m in Sources */,
 				B1CC8637173BD46100AC49BB /* AwesomeMenuItem.m in Sources */,
+				ABE2BBBA1C4A6E590018C8B3 /* PanelBaseController.swift in Sources */,
 				AB2437231C43C77500FD51D9 /* MemoInputController.m in Sources */,
 				B1CC863A173BD47300AC49BB /* iCarousel.m in Sources */,
 				B1CC863F173BD48400AC49BB /* JASidePanelController.m in Sources */,
@@ -578,6 +598,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		ABE2BBB31C4A68710018C8B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE2BBB41C4A68710018C8B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		B18954EB171EBCC700B205B4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -615,7 +643,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -639,7 +667,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -650,14 +678,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18CE05956AE751B12F661BBE /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IdeaCards/IdeaCards-Prefix.pch";
 				INFOPLIST_FILE = "IdeaCards/IdeaCards-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.urouro.IdeaCards;
 				PRODUCT_NAME = IdeaCards;
+				SWIFT_OBJC_BRIDGING_HEADER = IdeaCards/BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -666,14 +698,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B666A3DD748842174126667 /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IdeaCards/IdeaCards-Prefix.pch";
 				INFOPLIST_FILE = "IdeaCards/IdeaCards-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.urouro.IdeaCards;
 				PRODUCT_NAME = IdeaCards;
+				SWIFT_OBJC_BRIDGING_HEADER = IdeaCards/BridgingHeader.h;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

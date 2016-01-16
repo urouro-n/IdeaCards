@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JRe-wP-yaB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ykq-YE-6IV">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="JRe-wP-yaB" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vnf-ry-rUw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yp8-ay-Hiv" kind="relationship" relationship="rootViewController" id="G2o-Pn-AfO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="946-sf-XDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440" y="277"/>
+        </scene>
+        <!--Panel Base Controller-->
+        <scene sceneID="Pzi-E1-eVK">
+            <objects>
+                <viewController id="yp8-ay-Hiv" customClass="PanelBaseController" customModule="IdeaCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5hp-uT-aKq"/>
+                        <viewControllerLayoutGuide type="bottom" id="fVy-0X-m4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UB4-46-zGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xg1-uk-CLq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7db-TP-Oh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="277"/>
+        </scene>
+        <!--Top Controller-->
+        <scene sceneID="LFl-gd-XKn">
+            <objects>
+                <viewController storyboardIdentifier="TopController" id="fHP-CW-EKw" customClass="TopController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3aw-ds-bv8"/>
+                        <viewControllerLayoutGuide type="bottom" id="bAs-qz-ctW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VfR-bc-Pr4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k86-o8-eTr" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4q-oB-VjU" customClass="iCarousel">
+                                <rect key="frame" x="300" y="0.0" width="300" height="600"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-JW-OPa">
+                                <rect key="frame" x="268" y="262" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="J0A-1F-aFU"/>
+                                    <constraint firstAttribute="width" constant="64" id="M5U-yB-stc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" red="0.19997379183769226" green="0.20001506805419922" blue="0.19997119903564453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCrossButton:" destination="fHP-CW-EKw" eventType="touchUpInside" id="HbL-7Y-Dse"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k86-o8-eTr" firstAttribute="leading" secondItem="VfR-bc-Pr4" secondAttribute="leading" id="8LH-L0-mbv"/>
+                            <constraint firstItem="bAs-qz-ctW" firstAttribute="top" secondItem="k86-o8-eTr" secondAttribute="bottom" id="Cno-dN-4uL"/>
+                            <constraint firstItem="z4q-oB-VjU" firstAttribute="width" secondItem="VfR-bc-Pr4" secondAttribute="width" multiplier="0.5" id="G4F-ON-CPt"/>
+                            <constraint firstItem="bAs-qz-ctW" firstAttribute="top" secondItem="z4q-oB-VjU" secondAttribute="bottom" id="Hkb-4M-Jdv"/>
+                            <constraint firstItem="OCH-JW-OPa" firstAttribute="centerY" secondItem="VfR-bc-Pr4" secondAttribute="centerY" constant="-6" id="T98-Ui-Y1n"/>
+                            <constraint firstAttribute="trailing" secondItem="z4q-oB-VjU" secondAttribute="trailing" id="V1t-gj-Mle"/>
+                            <constraint firstItem="k86-o8-eTr" firstAttribute="top" secondItem="VfR-bc-Pr4" secondAttribute="topMargin" id="aHr-mp-75l"/>
+                            <constraint firstItem="OCH-JW-OPa" firstAttribute="centerX" secondItem="VfR-bc-Pr4" secondAttribute="centerX" id="qXB-qG-vcY"/>
+                            <constraint firstItem="k86-o8-eTr" firstAttribute="width" secondItem="VfR-bc-Pr4" secondAttribute="width" multiplier="0.5" id="sZo-oI-IQB"/>
+                            <constraint firstItem="z4q-oB-VjU" firstAttribute="top" secondItem="VfR-bc-Pr4" secondAttribute="top" id="thJ-OY-PLv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8iG-WI-nEJ"/>
+                    <connections>
+                        <outlet property="crossButton" destination="OCH-JW-OPa" id="SHa-gh-8a1"/>
+                        <outlet property="leftCarousel" destination="k86-o8-eTr" id="Vu1-bT-Q5a"/>
+                        <outlet property="rightCarousel" destination="z4q-oB-VjU" id="t4F-Q3-T08"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Spr-mh-jI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="277"/>
+        </scene>
+    </scenes>
+</document>
