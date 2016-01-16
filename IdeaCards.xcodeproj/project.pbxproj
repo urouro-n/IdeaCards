@@ -39,6 +39,7 @@
 		AB2437561C43C7D700FD51D9 /* menu_item_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437421C43C7D700FD51D9 /* menu_item_on.png */; };
 		AB2437571C43C7D700FD51D9 /* menu_item_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437431C43C7D700FD51D9 /* menu_item_on@2x.png */; };
 		AB24375A1C43C82D00FD51D9 /* TopController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437591C43C82D00FD51D9 /* TopController.m */; };
+		ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB01C4A611B0018C8B3 /* Env.plist */; };
 		B12E279F172567B40090B797 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E279E172567B40090B797 /* QuartzCore.framework */; };
 		B160F98017292EC900F6A332 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F96E17292EC900F6A332 /* FMDatabase.m */; };
 		B160F98117292EC900F6A332 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F97017292EC900F6A332 /* FMDatabaseAdditions.m */; };
@@ -103,6 +104,7 @@
 		AB2437431C43C7D700FD51D9 /* menu_item_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_item_on@2x.png"; sourceTree = "<group>"; };
 		AB2437581C43C82D00FD51D9 /* TopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopController.h; path = IdeaCards/TopController.h; sourceTree = SOURCE_ROOT; };
 		AB2437591C43C82D00FD51D9 /* TopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopController.m; path = IdeaCards/TopController.m; sourceTree = SOURCE_ROOT; };
+		ABE2BBB01C4A611B0018C8B3 /* Env.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Env.plist; sourceTree = SOURCE_ROOT; };
 		B12E279E172567B40090B797 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B160F96D17292EC900F6A332 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		B160F96E17292EC900F6A332 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 				B18954EB171EBCC700B205B4 /* InfoPlist.strings */,
 				B18954EE171EBCC700B205B4 /* main.m */,
 				B18954F0171EBCC700B205B4 /* IdeaCards-Prefix.pch */,
+				ABE2BBB01C4A611B0018C8B3 /* Env.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				AB2437451C43C7D700FD51D9 /* Icon@2x.png in Resources */,
 				AB2437561C43C7D700FD51D9 /* menu_item_on.png in Resources */,
 				AB2437481C43C7D700FD51D9 /* menu_base.png in Resources */,
+				ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */,
 				B18954ED171EBCC700B205B4 /* InfoPlist.strings in Resources */,
 				AB2437491C43C7D700FD51D9 /* menu_base@2x.png in Resources */,
 				AB2437441C43C7D700FD51D9 /* Icon.png in Resources */,

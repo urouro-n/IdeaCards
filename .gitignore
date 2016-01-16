@@ -24,3 +24,7 @@ xcuserdata
 *.app.dSYM.zip
 fastlane/report.xml
 fastlane/screenshots
+
+# App
+Env.plist
+!Env.plist.example
