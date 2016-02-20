@@ -1,6 +1,6 @@
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DeployGateSDK"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DeployGateSDK"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "DeployGateSDK" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AwesomeMenu" "${PODS_ROOT}/Headers/Public/DeployGateSDK" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/JASidePanels" "${PODS_ROOT}/Headers/Public/iCarousel"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AwesomeMenu" -isystem "${PODS_ROOT}/Headers/Public/DeployGateSDK" -isystem "${PODS_ROOT}/Headers/Public/FMDB" -isystem "${PODS_ROOT}/Headers/Public/JASidePanels" -isystem "${PODS_ROOT}/Headers/Public/iCarousel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AwesomeMenu" -l"FMDB" -l"JASidePanels" -l"iCarousel" -l"sqlite3" -framework "DeployGateSDK" -framework "QuartzCore" -framework "SystemConfiguration"
 PODS_ROOT = ${SRCROOT}/Pods

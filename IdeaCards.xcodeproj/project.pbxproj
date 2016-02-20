@@ -43,11 +43,6 @@
 		ABE2BBB51C4A68710018C8B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB31C4A68710018C8B3 /* Main.storyboard */; };
 		ABE2BBBA1C4A6E590018C8B3 /* PanelBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */; };
 		B12E279F172567B40090B797 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E279E172567B40090B797 /* QuartzCore.framework */; };
-		B160F98017292EC900F6A332 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F96E17292EC900F6A332 /* FMDatabase.m */; };
-		B160F98117292EC900F6A332 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F97017292EC900F6A332 /* FMDatabaseAdditions.m */; };
-		B160F98217292EC900F6A332 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F97217292EC900F6A332 /* FMDatabasePool.m */; };
-		B160F98317292EC900F6A332 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F97417292EC900F6A332 /* FMDatabaseQueue.m */; };
-		B160F98517292EC900F6A332 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B160F97717292EC900F6A332 /* FMResultSet.m */; };
 		B160F98D17292ED800F6A332 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B160F98C17292ED800F6A332 /* libsqlite3.0.dylib */; };
 		B160F99817293F5C00F6A332 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B160F99717293F5C00F6A332 /* MessageUI.framework */; };
 		B160F99A1729423A00F6A332 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B160F9991729423A00F6A332 /* Twitter.framework */; };
@@ -56,11 +51,6 @@
 		B18954E7171EBCC700B205B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18954E6171EBCC700B205B4 /* CoreGraphics.framework */; };
 		B18954ED171EBCC700B205B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B18954EB171EBCC700B205B4 /* InfoPlist.strings */; };
 		B18954EF171EBCC700B205B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B18954EE171EBCC700B205B4 /* main.m */; };
-		B1CC8636173BD46100AC49BB /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CC8633173BD46100AC49BB /* AwesomeMenu.m */; };
-		B1CC8637173BD46100AC49BB /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CC8635173BD46100AC49BB /* AwesomeMenuItem.m */; };
-		B1CC863A173BD47300AC49BB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CC8639173BD47300AC49BB /* iCarousel.m */; };
-		B1CC863F173BD48400AC49BB /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CC863C173BD48400AC49BB /* JASidePanelController.m */; };
-		B1CC8640173BD48400AC49BB /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CC863E173BD48400AC49BB /* UIViewController+JASidePanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,16 +101,6 @@
 		ABE2BBB61C4A6A4E0018C8B3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = IdeaCards/BridgingHeader.h; sourceTree = "<group>"; };
 		ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelBaseController.swift; sourceTree = "<group>"; };
 		B12E279E172567B40090B797 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B160F96D17292EC900F6A332 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		B160F96E17292EC900F6A332 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		B160F96F17292EC900F6A332 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		B160F97017292EC900F6A332 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		B160F97117292EC900F6A332 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		B160F97217292EC900F6A332 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		B160F97317292EC900F6A332 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		B160F97417292EC900F6A332 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		B160F97617292EC900F6A332 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		B160F97717292EC900F6A332 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		B160F98C17292ED800F6A332 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		B160F99717293F5C00F6A332 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B160F9991729423A00F6A332 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -132,16 +112,6 @@
 		B18954EC171EBCC700B205B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B18954EE171EBCC700B205B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../IdeaCards/main.m; sourceTree = "<group>"; };
 		B18954F0171EBCC700B205B4 /* IdeaCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IdeaCards-Prefix.pch"; path = "../IdeaCards/IdeaCards-Prefix.pch"; sourceTree = "<group>"; };
-		B1CC8632173BD46100AC49BB /* AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AwesomeMenu.h; path = External/AwesomeMenu/AwesomeMenu/AwesomeMenu/AwesomeMenu.h; sourceTree = SOURCE_ROOT; };
-		B1CC8633173BD46100AC49BB /* AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AwesomeMenu.m; path = External/AwesomeMenu/AwesomeMenu/AwesomeMenu/AwesomeMenu.m; sourceTree = SOURCE_ROOT; };
-		B1CC8634173BD46100AC49BB /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AwesomeMenuItem.h; path = External/AwesomeMenu/AwesomeMenu/AwesomeMenu/AwesomeMenuItem.h; sourceTree = SOURCE_ROOT; };
-		B1CC8635173BD46100AC49BB /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AwesomeMenuItem.m; path = External/AwesomeMenu/AwesomeMenu/AwesomeMenu/AwesomeMenuItem.m; sourceTree = SOURCE_ROOT; };
-		B1CC8638173BD47300AC49BB /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = External/iCarousel/iCarousel/iCarousel.h; sourceTree = SOURCE_ROOT; };
-		B1CC8639173BD47300AC49BB /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = External/iCarousel/iCarousel/iCarousel.m; sourceTree = SOURCE_ROOT; };
-		B1CC863B173BD48400AC49BB /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JASidePanelController.h; path = External/JASidePanels/JASidePanels/Source/JASidePanelController.h; sourceTree = SOURCE_ROOT; };
-		B1CC863C173BD48400AC49BB /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JASidePanelController.m; path = External/JASidePanels/JASidePanels/Source/JASidePanelController.m; sourceTree = SOURCE_ROOT; };
-		B1CC863D173BD48400AC49BB /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+JASidePanel.h"; path = "External/JASidePanels/JASidePanels/Source/UIViewController+JASidePanel.h"; sourceTree = SOURCE_ROOT; };
-		B1CC863E173BD48400AC49BB /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+JASidePanel.m"; path = "External/JASidePanels/JASidePanels/Source/UIViewController+JASidePanel.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,119 +227,10 @@
 			name = UserInterfaces;
 			sourceTree = "<group>";
 		};
-		B1042DD11726ACCC0088A47C /* iCarousel */ = {
-			isa = PBXGroup;
-			children = (
-				B10430AE1726ACCF0088A47C /* iCarousel */,
-			);
-			path = iCarousel;
-			sourceTree = "<group>";
-		};
-		B10430AE1726ACCF0088A47C /* iCarousel */ = {
-			isa = PBXGroup;
-			children = (
-				B1CC8638173BD47300AC49BB /* iCarousel.h */,
-				B1CC8639173BD47300AC49BB /* iCarousel.m */,
-			);
-			path = iCarousel;
-			sourceTree = "<group>";
-		};
-		B12544EB1727FC580070BABC /* AwesomeMenu */ = {
-			isa = PBXGroup;
-			children = (
-				B12544EC1727FC580070BABC /* AwesomeMenu */,
-			);
-			path = AwesomeMenu;
-			sourceTree = "<group>";
-		};
-		B12544EC1727FC580070BABC /* AwesomeMenu */ = {
-			isa = PBXGroup;
-			children = (
-				B12544EF1727FC580070BABC /* AwesomeMenu */,
-			);
-			path = AwesomeMenu;
-			sourceTree = "<group>";
-		};
-		B12544EF1727FC580070BABC /* AwesomeMenu */ = {
-			isa = PBXGroup;
-			children = (
-				B1CC8632173BD46100AC49BB /* AwesomeMenu.h */,
-				B1CC8633173BD46100AC49BB /* AwesomeMenu.m */,
-				B1CC8634173BD46100AC49BB /* AwesomeMenuItem.h */,
-				B1CC8635173BD46100AC49BB /* AwesomeMenuItem.m */,
-			);
-			path = AwesomeMenu;
-			sourceTree = "<group>";
-		};
-		B12E2770172566650090B797 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				B160F95D17292EC900F6A332 /* FMDB */,
-				B12544EB1727FC580070BABC /* AwesomeMenu */,
-				B1042DD11726ACCC0088A47C /* iCarousel */,
-				B12E2771172566650090B797 /* JASidePanels */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		B12E2771172566650090B797 /* JASidePanels */ = {
-			isa = PBXGroup;
-			children = (
-				B12E2774172566650090B797 /* JASidePanels */,
-			);
-			path = JASidePanels;
-			sourceTree = "<group>";
-		};
-		B12E2774172566650090B797 /* JASidePanels */ = {
-			isa = PBXGroup;
-			children = (
-				B12E2785172566650090B797 /* Source */,
-			);
-			path = JASidePanels;
-			sourceTree = "<group>";
-		};
-		B12E2785172566650090B797 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B1CC863B173BD48400AC49BB /* JASidePanelController.h */,
-				B1CC863C173BD48400AC49BB /* JASidePanelController.m */,
-				B1CC863D173BD48400AC49BB /* UIViewController+JASidePanel.h */,
-				B1CC863E173BD48400AC49BB /* UIViewController+JASidePanel.m */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		B160F95D17292EC900F6A332 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				B160F96C17292EC900F6A332 /* src */,
-			);
-			name = FMDB;
-			path = ../External/FMDB;
-			sourceTree = "<group>";
-		};
-		B160F96C17292EC900F6A332 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				B160F96D17292EC900F6A332 /* FMDatabase.h */,
-				B160F96E17292EC900F6A332 /* FMDatabase.m */,
-				B160F96F17292EC900F6A332 /* FMDatabaseAdditions.h */,
-				B160F97017292EC900F6A332 /* FMDatabaseAdditions.m */,
-				B160F97117292EC900F6A332 /* FMDatabasePool.h */,
-				B160F97217292EC900F6A332 /* FMDatabasePool.m */,
-				B160F97317292EC900F6A332 /* FMDatabaseQueue.h */,
-				B160F97417292EC900F6A332 /* FMDatabaseQueue.m */,
-				B160F97617292EC900F6A332 /* FMResultSet.h */,
-				B160F97717292EC900F6A332 /* FMResultSet.m */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		B18954D6171EBCC700B205B4 = {
 			isa = PBXGroup;
 			children = (
 				B18954E8171EBCC700B205B4 /* IdeaCards */,
-				B12E2770172566650090B797 /* Vendor */,
 				B18954E1171EBCC700B205B4 /* Frameworks */,
 				B18954E0171EBCC700B205B4 /* Products */,
 				29E98AC53FC120A34714E1F8 /* Pods */,
@@ -580,18 +441,8 @@
 				AB2437251C43C77500FD51D9 /* ICDaoMemo.m in Sources */,
 				AB2437221C43C77500FD51D9 /* EditController.m in Sources */,
 				AB2437261C43C77500FD51D9 /* ICItemManager.m in Sources */,
-				B160F98017292EC900F6A332 /* FMDatabase.m in Sources */,
-				B160F98117292EC900F6A332 /* FMDatabaseAdditions.m in Sources */,
-				B160F98217292EC900F6A332 /* FMDatabasePool.m in Sources */,
-				B160F98317292EC900F6A332 /* FMDatabaseQueue.m in Sources */,
-				B160F98517292EC900F6A332 /* FMResultSet.m in Sources */,
-				B1CC8636173BD46100AC49BB /* AwesomeMenu.m in Sources */,
-				B1CC8637173BD46100AC49BB /* AwesomeMenuItem.m in Sources */,
 				ABE2BBBA1C4A6E590018C8B3 /* PanelBaseController.swift in Sources */,
 				AB2437231C43C77500FD51D9 /* MemoInputController.m in Sources */,
-				B1CC863A173BD47300AC49BB /* iCarousel.m in Sources */,
-				B1CC863F173BD48400AC49BB /* JASidePanelController.m in Sources */,
-				B1CC8640173BD48400AC49BB /* UIViewController+JASidePanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
