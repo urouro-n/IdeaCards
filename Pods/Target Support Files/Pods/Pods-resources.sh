@@ -58,38 +58,10 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star@2x.png"
   install_resource "DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj"
   install_resource "DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus@2x.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star.png"
-  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star@2x.png"
   install_resource "DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj"
   install_resource "DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj"
 fi

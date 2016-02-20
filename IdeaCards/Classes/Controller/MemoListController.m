@@ -24,8 +24,8 @@
     [self.navigationController setNavigationBarHidden:NO animated:NO];
     
     // Navigation Bar
-    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithTitle:@"Close"
-                                                                  style:UIBarButtonItemStyleBordered
+    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithTitle:@"閉じる"
+                                                                  style:UIBarButtonItemStylePlain
                                                                  target:self
                                                                  action:@selector(onCloseButton:)];
     self.navigationItem.leftBarButtonItem = closeItem;

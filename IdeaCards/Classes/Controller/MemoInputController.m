@@ -56,14 +56,14 @@
     [self.navigationController setNavigationBarHidden:NO animated:NO];
     
     // Navigation Bar
-    UIBarButtonItem *okItem = [[UIBarButtonItem alloc] initWithTitle:@"OK"
-                                                               style:UIBarButtonItemStyleBordered
+    UIBarButtonItem *okItem = [[UIBarButtonItem alloc] initWithTitle:@"保存"
+                                                               style:UIBarButtonItemStyleDone
                                                               target:self
                                                               action:@selector(onOkButton:)];
     self.navigationItem.rightBarButtonItem = okItem;
     
-    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithTitle:@"Close"
-                                                                  style:UIBarButtonItemStyleBordered
+    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithTitle:@"閉じる"
+                                                                  style:UIBarButtonItemStylePlain
                                                                  target:self
                                                                  action:@selector(onCloseButton:)];
     self.navigationItem.leftBarButtonItem = closeItem;

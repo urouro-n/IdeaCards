@@ -82,3 +82,16 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods/AwesomeMenu.framework"
+  install_framework "Pods/FMDB.framework"
+  install_framework "Pods/JASidePanels.framework"
+  install_framework "Pods/iCarousel.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods/AwesomeMenu.framework"
+  install_framework "Pods/FMDB.framework"
+  install_framework "Pods/JASidePanels.framework"
+  install_framework "Pods/iCarousel.framework"
+fi

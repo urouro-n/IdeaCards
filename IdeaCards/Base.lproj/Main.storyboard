@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JRe-wP-yaB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JRe-wP-yaB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -46,7 +46,7 @@
         <!--Top Controller-->
         <scene sceneID="LFl-gd-XKn">
             <objects>
-                <viewController storyboardIdentifier="TopController" id="fHP-CW-EKw" customClass="TopController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopController" id="fHP-CW-EKw" customClass="TopController" customModule="IdeaCards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3aw-ds-bv8"/>
                         <viewControllerLayoutGuide type="bottom" id="bAs-qz-ctW"/>
@@ -72,7 +72,18 @@
                                     <color key="titleColor" red="0.19997379183769226" green="0.20001506805419922" blue="0.19997119903564453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onCrossButton:" destination="fHP-CW-EKw" eventType="touchUpInside" id="HbL-7Y-Dse"/>
+                                    <action selector="onCrossButton:" destination="fHP-CW-EKw" eventType="touchUpInside" id="7qr-ir-StM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-qf-fHW">
+                                <rect key="frame" x="8" y="28" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Eg4-bY-SmW"/>
+                                    <constraint firstAttribute="height" constant="36" id="zdT-QY-d3U"/>
+                                </constraints>
+                                <state key="normal" image="menu-button"/>
+                                <connections>
+                                    <action selector="onListButton:" destination="fHP-CW-EKw" eventType="touchUpInside" id="Mm1-vf-6Hu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,6 +91,7 @@
                         <constraints>
                             <constraint firstItem="k86-o8-eTr" firstAttribute="leading" secondItem="VfR-bc-Pr4" secondAttribute="leading" id="8LH-L0-mbv"/>
                             <constraint firstItem="bAs-qz-ctW" firstAttribute="top" secondItem="k86-o8-eTr" secondAttribute="bottom" id="Cno-dN-4uL"/>
+                            <constraint firstItem="BdX-qf-fHW" firstAttribute="top" secondItem="VfR-bc-Pr4" secondAttribute="top" constant="28" id="Eek-dj-Y5x"/>
                             <constraint firstItem="z4q-oB-VjU" firstAttribute="width" secondItem="VfR-bc-Pr4" secondAttribute="width" multiplier="0.5" id="G4F-ON-CPt"/>
                             <constraint firstItem="bAs-qz-ctW" firstAttribute="top" secondItem="z4q-oB-VjU" secondAttribute="bottom" id="Hkb-4M-Jdv"/>
                             <constraint firstItem="OCH-JW-OPa" firstAttribute="centerY" secondItem="VfR-bc-Pr4" secondAttribute="centerY" constant="-6" id="T98-Ui-Y1n"/>
@@ -88,6 +100,7 @@
                             <constraint firstItem="OCH-JW-OPa" firstAttribute="centerX" secondItem="VfR-bc-Pr4" secondAttribute="centerX" id="qXB-qG-vcY"/>
                             <constraint firstItem="k86-o8-eTr" firstAttribute="width" secondItem="VfR-bc-Pr4" secondAttribute="width" multiplier="0.5" id="sZo-oI-IQB"/>
                             <constraint firstItem="z4q-oB-VjU" firstAttribute="top" secondItem="VfR-bc-Pr4" secondAttribute="top" id="thJ-OY-PLv"/>
+                            <constraint firstItem="BdX-qf-fHW" firstAttribute="leading" secondItem="VfR-bc-Pr4" secondAttribute="leading" constant="8" id="zUd-aM-779"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8iG-WI-nEJ"/>
@@ -102,4 +115,7 @@
             <point key="canvasLocation" x="830" y="277"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu-button" width="44" height="44"/>
+    </resources>
 </document>

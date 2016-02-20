@@ -40,7 +40,7 @@
     self.rightCarousel.vertical = YES;
     
     // Menu
-    self.menu = [self _createMenu:CGPointMake(self.view.center.x, self.view.frame.size.height - 30)];
+    // self.menu = [self _createMenu:CGPointMake(self.view.center.x, self.view.frame.size.height - 30)];
     [self.view addSubview:self.menu];
     
     self.menuBackground = [UIView new];

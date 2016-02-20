@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		451C929D7D27D71F9D8B5DF1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5645453313FD826A5F0DF169 /* libPods.a */; };
+		9BB28F58C13D1ED99F9497D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD65D74655A953E8E373A090 /* Pods.framework */; };
 		AB2437121C43C76B00FD51D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437111C43C76B00FD51D9 /* AppDelegate.m */; };
 		AB2437221C43C77500FD51D9 /* EditController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437161C43C77500FD51D9 /* EditController.m */; };
 		AB2437231C43C77500FD51D9 /* MemoInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437181C43C77500FD51D9 /* MemoInputController.m */; };
@@ -34,8 +34,8 @@
 		AB2437551C43C7D700FD51D9 /* menu_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437411C43C7D700FD51D9 /* menu_item@2x.png */; };
 		AB2437561C43C7D700FD51D9 /* menu_item_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437421C43C7D700FD51D9 /* menu_item_on.png */; };
 		AB2437571C43C7D700FD51D9 /* menu_item_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437431C43C7D700FD51D9 /* menu_item_on@2x.png */; };
-		AB24375A1C43C82D00FD51D9 /* TopController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437591C43C82D00FD51D9 /* TopController.m */; };
 		ABC9E79C1C782F8A00F3D8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC9E79B1C782F8A00F3D8A6 /* Images.xcassets */; };
+		ABC9E79E1C7833D500F3D8A6 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9E79D1C7833D500F3D8A6 /* TopController.swift */; };
 		ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB01C4A611B0018C8B3 /* Env.plist */; };
 		ABE2BBB51C4A68710018C8B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB31C4A68710018C8B3 /* Main.storyboard */; };
 		ABE2BBBA1C4A6E590018C8B3 /* PanelBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */; };
@@ -52,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		18CE05956AE751B12F661BBE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		5645453313FD826A5F0DF169 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B666A3DD748842174126667 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB2437101C43C76B00FD51D9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IdeaCards/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		AB2437111C43C76B00FD51D9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IdeaCards/AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -87,9 +86,8 @@
 		AB2437411C43C7D700FD51D9 /* menu_item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_item@2x.png"; sourceTree = "<group>"; };
 		AB2437421C43C7D700FD51D9 /* menu_item_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_item_on.png; sourceTree = "<group>"; };
 		AB2437431C43C7D700FD51D9 /* menu_item_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_item_on@2x.png"; sourceTree = "<group>"; };
-		AB2437581C43C82D00FD51D9 /* TopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopController.h; path = IdeaCards/TopController.h; sourceTree = SOURCE_ROOT; };
-		AB2437591C43C82D00FD51D9 /* TopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopController.m; path = IdeaCards/TopController.m; sourceTree = SOURCE_ROOT; };
 		ABC9E79B1C782F8A00F3D8A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IdeaCards/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		ABC9E79D1C7833D500F3D8A6 /* TopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
 		ABE2BBB01C4A611B0018C8B3 /* Env.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Env.plist; sourceTree = SOURCE_ROOT; };
 		ABE2BBB41C4A68710018C8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IdeaCards/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		ABE2BBB61C4A6A4E0018C8B3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = IdeaCards/BridgingHeader.h; sourceTree = "<group>"; };
@@ -106,6 +104,7 @@
 		B18954EC171EBCC700B205B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B18954EE171EBCC700B205B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../IdeaCards/main.m; sourceTree = "<group>"; };
 		B18954F0171EBCC700B205B4 /* IdeaCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IdeaCards-Prefix.pch"; path = "../IdeaCards/IdeaCards-Prefix.pch"; sourceTree = "<group>"; };
+		FD65D74655A953E8E373A090 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +119,7 @@
 				B18954E3171EBCC700B205B4 /* UIKit.framework in Frameworks */,
 				B18954E5171EBCC700B205B4 /* Foundation.framework in Frameworks */,
 				B18954E7171EBCC700B205B4 /* CoreGraphics.framework in Frameworks */,
-				451C929D7D27D71F9D8B5DF1 /* libPods.a in Frameworks */,
+				9BB28F58C13D1ED99F9497D1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */,
-				AB2437581C43C82D00FD51D9 /* TopController.h */,
-				AB2437591C43C82D00FD51D9 /* TopController.m */,
+				ABC9E79D1C7833D500F3D8A6 /* TopController.swift */,
 				AB2437151C43C77500FD51D9 /* EditController.h */,
 				AB2437161C43C77500FD51D9 /* EditController.m */,
 				AB2437171C43C77500FD51D9 /* MemoInputController.h */,
@@ -237,7 +235,7 @@
 				B18954E2171EBCC700B205B4 /* UIKit.framework */,
 				B18954E4171EBCC700B205B4 /* Foundation.framework */,
 				B18954E6171EBCC700B205B4 /* CoreGraphics.framework */,
-				5645453313FD826A5F0DF169 /* libPods.a */,
+				FD65D74655A953E8E373A090 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -413,8 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC9E79E1C7833D500F3D8A6 /* TopController.swift in Sources */,
 				B18954EF171EBCC700B205B4 /* main.m in Sources */,
-				AB24375A1C43C82D00FD51D9 /* TopController.m in Sources */,
 				AB2437241C43C77500FD51D9 /* MemoListController.m in Sources */,
 				AB2437271C43C77500FD51D9 /* ICMemo.m in Sources */,
 				AB2437121C43C76B00FD51D9 /* AppDelegate.m in Sources */,

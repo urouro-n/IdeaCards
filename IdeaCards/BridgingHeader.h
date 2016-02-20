@@ -3,6 +3,9 @@
 //
 
 #import "JASidePanelController.h"
+#import <iCarousel/iCarousel.h>
 
 #import "EditController.h"
-#import "TopController.h"
+#import "ICItemManager.h"
+#import "MemoInputController.h"
+#import "MemoListController.h"
