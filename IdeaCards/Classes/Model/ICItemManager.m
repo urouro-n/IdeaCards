@@ -1,5 +1,8 @@
 #import "ICItemManager.h"
 
+NSString * const ICItemManagerDidAddItem = @"ICItemManagerDidAddItem";
+NSString * const ICItemManagerDidRemoveItem = @"ICItemManagerDidRemoveItem";
+
 NSString * const kLeftItems = @"kLeftItems";
 NSString * const kRightItems = @"kRightItems";
 
@@ -52,6 +55,8 @@ static ICItemManager *_sharedInstance = nil;
     
     [[NSUserDefaults standardUserDefaults] setObject:self.left forKey:kLeftItems];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:ICItemManagerDidAddItem object:item];
 }
 
 - (void)addRightItem:(NSString *)item
@@ -60,22 +65,30 @@ static ICItemManager *_sharedInstance = nil;
     
     [[NSUserDefaults standardUserDefaults] setObject:self.right forKey:kRightItems];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:ICItemManagerDidAddItem object:item];
 }
 
 - (void)deleteLeftItemAtIndex:(NSInteger)index
 {
+    NSString *item = self.left[index];
     [self.left removeObjectAtIndex:index];
     
     [[NSUserDefaults standardUserDefaults] setObject:self.left forKey:kLeftItems];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:ICItemManagerDidRemoveItem object:item];
 }
 
 - (void)deleteRightItemAtIndex:(NSInteger)index
 {
+    NSString *item = self.right[index];
     [self.right removeObjectAtIndex:index];
     
     [[NSUserDefaults standardUserDefaults] setObject:self.right forKey:kRightItems];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:ICItemManagerDidRemoveItem object:item];
 }
 
 @end

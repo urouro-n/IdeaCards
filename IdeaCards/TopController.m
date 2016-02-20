@@ -57,6 +57,16 @@
                                                  name:UIDeviceOrientationDidChangeNotification
                                                object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(itemAdded:)
+                                                 name:ICItemManagerDidAddItem
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(itemRemoved:)
+                                                 name:ICItemManagerDidRemoveItem
+                                               object:nil];
+    
     [self reloadData];
 }
 
@@ -66,6 +76,14 @@
     
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIDeviceOrientationDidChangeNotification
+                                                  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:ICItemManagerDidAddItem
+                                                  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:ICItemManagerDidRemoveItem
                                                   object:nil];
 }
 
@@ -168,6 +186,18 @@
     
     self.crossButton.center = CGPointMake(self.view.center.x, self.view.center.y-5);
     [self.view bringSubviewToFront:self.crossButton];
+}
+
+- (void)itemAdded:(NSNotification *)notification
+{
+    [self reloadData];
+}
+
+- (void)itemRemoved:(NSNotification *)notification
+{
+    LOG(@"notification=%@", notification);
+    
+    [self reloadData];
 }
 
 

@@ -1,5 +1,8 @@
 #import <Foundation/Foundation.h>
 
+extern NSString * const ICItemManagerDidAddItem;
+extern NSString * const ICItemManagerDidRemoveItem;
+
 @interface ICItemManager : NSObject
 
 + (ICItemManager *)sharedManager;
