@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JASidePanels
 
 class PanelBaseController: JASidePanelController {
     
