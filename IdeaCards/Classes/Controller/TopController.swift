@@ -3,7 +3,7 @@
 //  IdeaCards
 //
 //  Created by Kenta Nakai on 2/20/16.
-//  Copyright © 2016 Nakai Kenta. All rights reserved.
+//  Copyright © 2016 UROURO. All rights reserved.
 //
 
 import UIKit
