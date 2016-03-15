@@ -1,0 +1,20 @@
+fastlane_version "1.66.0"
+
+default_platform :ios
+
+platform :ios do
+  desc "Build app"
+  private_lane :build_app do
+    gym(scheme: "IdeaCards2")
+  end
+
+  desc "Upload a new build to Apple TestFlight"
+  lane :beta do
+    increment_build_number
+    build_app
+    pilot
+
+    commit_version_bump(message: "Bump build version bump by fastlane")
+    add_git_tag(tag: "testflight-#{build_number}")
+  end
+end
