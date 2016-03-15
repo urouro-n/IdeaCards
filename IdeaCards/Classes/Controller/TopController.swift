@@ -79,16 +79,6 @@ class TopController: UIViewController, iCarouselDataSource, iCarouselDelegate, M
         
         presentViewController(nav, animated: true, completion: nil)
     }
-    
-    @IBAction func onListButton(sender: AnyObject) {
-        let controller = MemoListController()
-        controller.delegate = self
-        
-        let nav = UINavigationController(rootViewController: controller)
-        nav.modalPresentationStyle = .FormSheet
-        
-        presentViewController(nav, animated: true, completion: nil)
-    }
 
 
     // MARK: - Notification

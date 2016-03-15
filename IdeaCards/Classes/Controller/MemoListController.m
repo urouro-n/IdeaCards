@@ -23,13 +23,6 @@
     
     [self.navigationController setNavigationBarHidden:NO animated:NO];
     
-    // Navigation Bar
-    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithTitle:@"閉じる"
-                                                                  style:UIBarButtonItemStylePlain
-                                                                 target:self
-                                                                 action:@selector(onCloseButton:)];
-    self.navigationItem.leftBarButtonItem = closeItem;
-    
     // Table View
     self.table = [[UITableView alloc] initWithFrame:CGRectMake(0,
                                                                0,

@@ -34,6 +34,7 @@
 		AB2437551C43C7D700FD51D9 /* menu_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437411C43C7D700FD51D9 /* menu_item@2x.png */; };
 		AB2437561C43C7D700FD51D9 /* menu_item_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437421C43C7D700FD51D9 /* menu_item_on.png */; };
 		AB2437571C43C7D700FD51D9 /* menu_item_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2437431C43C7D700FD51D9 /* menu_item_on@2x.png */; };
+		ABB66D231C980F8A00849D26 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB66D221C980F8A00849D26 /* MenuController.swift */; };
 		ABC9E79C1C782F8A00F3D8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC9E79B1C782F8A00F3D8A6 /* Images.xcassets */; };
 		ABC9E79E1C7833D500F3D8A6 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9E79D1C7833D500F3D8A6 /* TopController.swift */; };
 		ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB01C4A611B0018C8B3 /* Env.plist */; };
@@ -86,6 +87,7 @@
 		AB2437411C43C7D700FD51D9 /* menu_item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_item@2x.png"; sourceTree = "<group>"; };
 		AB2437421C43C7D700FD51D9 /* menu_item_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_item_on.png; sourceTree = "<group>"; };
 		AB2437431C43C7D700FD51D9 /* menu_item_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_item_on@2x.png"; sourceTree = "<group>"; };
+		ABB66D221C980F8A00849D26 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		ABC9E79B1C782F8A00F3D8A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IdeaCards/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		ABC9E79D1C7833D500F3D8A6 /* TopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
 		ABE2BBB01C4A611B0018C8B3 /* Env.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Env.plist; sourceTree = SOURCE_ROOT; };
@@ -152,6 +154,7 @@
 			children = (
 				ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */,
 				ABC9E79D1C7833D500F3D8A6 /* TopController.swift */,
+				ABB66D221C980F8A00849D26 /* MenuController.swift */,
 				AB2437151C43C77500FD51D9 /* EditController.h */,
 				AB2437161C43C77500FD51D9 /* EditController.m */,
 				AB2437171C43C77500FD51D9 /* MemoInputController.h */,
@@ -300,7 +303,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Nakai Kenta";
+				ORGANIZATIONNAME = UROURO;
 				TargetAttributes = {
 					B18954DE171EBCC700B205B4 = {
 						DevelopmentTeam = U34SUZJMKE;
@@ -416,6 +419,7 @@
 				AB2437241C43C77500FD51D9 /* MemoListController.m in Sources */,
 				AB2437271C43C77500FD51D9 /* ICMemo.m in Sources */,
 				AB2437121C43C76B00FD51D9 /* AppDelegate.m in Sources */,
+				ABB66D231C980F8A00849D26 /* MenuController.swift in Sources */,
 				AB2437251C43C77500FD51D9 /* ICDaoMemo.m in Sources */,
 				AB2437221C43C77500FD51D9 /* EditController.m in Sources */,
 				AB2437261C43C77500FD51D9 /* ICItemManager.m in Sources */,
