@@ -102,7 +102,7 @@
 		B18954E2171EBCC700B205B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18954E4171EBCC700B205B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B18954E6171EBCC700B205B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B18954EA171EBCC700B205B4 /* IdeaCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IdeaCards-Info.plist"; path = "../IdeaCards/IdeaCards-Info.plist"; sourceTree = "<group>"; };
+		B18954EA171EBCC700B205B4 /* IdeaCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "IdeaCards-Info.plist"; path = "IdeaCards/IdeaCards-Info.plist"; sourceTree = "<group>"; };
 		B18954EC171EBCC700B205B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B18954EE171EBCC700B205B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../IdeaCards/main.m; sourceTree = "<group>"; };
 		B18954F0171EBCC700B205B4 /* IdeaCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IdeaCards-Prefix.pch"; path = "../IdeaCards/IdeaCards-Prefix.pch"; sourceTree = "<group>"; };
