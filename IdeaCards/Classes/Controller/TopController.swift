@@ -69,6 +69,36 @@ class TopController: UIViewController, iCarouselDataSource, iCarouselDelegate, M
     // MARK: - Action
     
     @IBAction func onCrossButton(sender: AnyObject) {
+        if leftData.count == 0 && rightData.count == 0 {
+            let alert = UIAlertController(
+                title: "組み合わせるワードがありません",
+                message: "画面を左右にスワイプしてワードを登録しましょう！",
+                preferredStyle: .Alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
+            return
+        } else if leftData.count == 0 {
+            let alert = UIAlertController(
+                title: "片方のワードがありません",
+                message: "画面を右にスワイプしてワードを登録しましょう！",
+                preferredStyle: .Alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
+            return
+        } else if rightData.count == 0 {
+            let alert = UIAlertController(
+                title: "片方のワードがありません",
+                message: "画面を左にスワイプしてワードを登録しましょう！",
+                preferredStyle: .Alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+        
+        
         let controller = MemoInputController()
         controller.delegate = self
         controller.leftItem = itemCurrentIndex(leftCarousel)
