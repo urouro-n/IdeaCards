@@ -8,14 +8,14 @@
 @interface TopController ()
 <iCarouselDataSource, iCarouselDelegate, MemoInputControllerDelegate, AwesomeMenuDelegate, MemoListControllerDelegate>
 
-@property(nonatomic,retain) NSArray *leftData;
-@property(nonatomic,retain) NSArray *rightData;
+@property (nonatomic, copy) NSArray *leftData;
+@property (nonatomic, copy) NSArray *rightData;
 
-@property(nonatomic,retain) iCarousel *leftCarousel;
-@property(nonatomic,retain) iCarousel *rightCarousel;
-@property(nonatomic,retain) UIButton *crossButton;
-@property(nonatomic,retain) AwesomeMenu *menu;
-@property(nonatomic,retain) UIView *menuBackground;
+@property (nonatomic, weak) IBOutlet iCarousel *leftCarousel;
+@property (nonatomic, weak) IBOutlet iCarousel *rightCarousel;
+@property (nonatomic, weak) IBOutlet UIButton *crossButton;
+@property (nonatomic, strong) AwesomeMenu *menu;
+@property (nonatomic, strong) UIView *menuBackground;
 
 @end
 
@@ -23,47 +23,29 @@
 
 #pragma mark - View Lifecycle
 
-- (void)loadView
+- (void)viewDidLoad
 {
-    [super loadView];
+    [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.leftCarousel = [[iCarousel alloc] initWithFrame:CGRectZero];
     self.leftCarousel.delegate = self;
     self.leftCarousel.dataSource = self;
     self.leftCarousel.type = iCarouselTypeLinear;
     self.leftCarousel.vertical = YES;
-    [self.view addSubview:self.leftCarousel];
     
-    self.rightCarousel = [[iCarousel alloc] initWithFrame:CGRectZero];
     self.rightCarousel.delegate = self;
     self.rightCarousel.dataSource = self;
     self.rightCarousel.type = iCarouselTypeLinear;
     self.rightCarousel.vertical = YES;
-    [self.view addSubview:self.rightCarousel];
-    
-    self.crossButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.crossButton.frame = CGRectMake(0, 0, 44, 44);
-    self.crossButton.backgroundColor = [UIColor clearColor];
-    [self.crossButton setTitle:@"×" forState:UIControlStateNormal];
-    [self.crossButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    self.crossButton.titleLabel.font = [UIFont systemFontOfSize:64];
-    [self.crossButton addTarget:self action:@selector(onCrossButton:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.crossButton];
     
     // Menu
-    self.menu = [self _createMenu:CGPointMake(self.view.center.x, self.view.frame.size.height - 30)];
+    // self.menu = [self _createMenu:CGPointMake(self.view.center.x, self.view.frame.size.height - 30)];
     [self.view addSubview:self.menu];
     
     self.menuBackground = [UIView new];
     self.menuBackground.frame = self.view.bounds;
     self.menuBackground.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.5f];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -73,6 +55,16 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(orientationChanged:)
                                                  name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(itemAdded:)
+                                                 name:ICItemManagerDidAddItem
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(itemRemoved:)
+                                                 name:ICItemManagerDidRemoveItem
                                                object:nil];
     
     [self reloadData];
@@ -85,8 +77,15 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIDeviceOrientationDidChangeNotification
                                                   object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:ICItemManagerDidAddItem
+                                                  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:ICItemManagerDidRemoveItem
+                                                  object:nil];
 }
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
@@ -106,7 +105,7 @@
 
 #pragma mark - Action
 
-- (void)onCrossButton:(UIButton *)button
+- (IBAction)onCrossButton:(id)sender
 {
     MemoInputController *controller;
     controller = [[MemoInputController alloc] init];
@@ -189,8 +188,21 @@
     [self.view bringSubviewToFront:self.crossButton];
 }
 
+- (void)itemAdded:(NSNotification *)notification
+{
+    [self reloadData];
+}
+
+- (void)itemRemoved:(NSNotification *)notification
+{
+    LOG(@"notification=%@", notification);
+    
+    [self reloadData];
+}
+
 
 #pragma mark - iCarousel DataSource/Delegate
+
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
     if(carousel == self.leftCarousel){
@@ -256,9 +268,6 @@
 
 - (void)AwesomeMenu:(AwesomeMenu *)menu didSelectIndex:(NSInteger)idx
 {
-    LOG_METHOD;
-    LOG(@"idx=%d", idx);
-    
     if(idx == 7){
         MemoListController *controller;
         controller = [[MemoListController alloc] init];

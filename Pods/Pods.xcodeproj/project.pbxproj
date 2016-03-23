@@ -1,0 +1,1160 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D619A711F71058C9238B17E9AF48AFC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256CECBFDE2EF959FF541BA4BD9D0FB /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		10C86995D04A48756AE4797CFFEDD69A /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = D89C3FB4CB84368C792C5BF5A139ED51 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		159DE0890B1201A1AD6D339ECC2D3679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		16B27943315A1B59B232CFEBF4B92E8B /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = C936DB7003B8ADCB95B47F7C6455DBC7 /* UIViewController+JASidePanel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		183A0D8AF38E0EE20E47F1FEF9B37327 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 252E1AF2CEB2B2A66294F5D80E706E9D /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F33CCA7CCD0FA8DB2CC3E6B0EF3FE7F /* UIViewController+JASidePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 510FCFF4BBC8E97F2D5BEA3421E3A34B /* UIViewController+JASidePanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E03728E3356FA3F45B1C1B1D119DEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		2E8D975029F4668DD71AFD5B1CAE0FB4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
+		32C03BCAD315354BA4B92021611EB58E /* bg-menuitem.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E1BC94E437002B87897EAFC3D56394 /* bg-menuitem.png */; };
+		343ADE1FD2C74F9FD12362A26BC981A7 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ECC23FFAE400A6B2658AAF2990D83BE /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7EF63787443BF7EAE180120C3AD4BF /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F61BE79D4B46C119C136EDE960CE78C /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0B94BB1D279B5BA769EC62BD2DA134 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46DC1C7C51EF6447E6D6166A99CEB512 /* AwesomeMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCDBA658C0116637EDDEC7C732E2A273 /* AwesomeMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F45D91AA84AC3E7A3E304C794BA2390 /* JASidePanels-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEB4FD51EB633C3A8A4D16C8E13DBC6 /* JASidePanels-dummy.m */; };
+		651C7C3A437AE56D7B814A3516148632 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF10B7A89ACE35A72EB8F3DA93D90C2 /* AwesomeMenu.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6C63E2BEBE2BC08BD46F6A91D0A08143 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CCBE44649A465802BA4485939A3DAF00 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74695802583BDB0C0818AC1B97F63815 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB8487C65F979A4681FFFD4D32FEA6 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74FCE208C17E237824985E5665A3BC9C /* icon-plus-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 74AE8AD7D4A7D0CE87E2659DD264D013 /* icon-plus-highlighted.png */; };
+		7C818AE74E830311E61FF1A7E42D0713 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CF2AF8AC2A5183761491E8CAC21AA8 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8244D3331FEE59D26BE9F8CBC4BDEC78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		845C63882C75878FA2F58FCD67DDC533 /* bg-addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 885C8BBC1AB113A06C3FC7039EF70407 /* bg-addbutton.png */; };
+		85F4A7F6F1B281F966419A511FB67D1A /* JASidePanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 25933D5F654EA55BF4143D1EED167077 /* JASidePanelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88D2980E7DDCE7BECD28FF1E9074D2AE /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = C6562EBDA44C9E78E322C29BE2EA3C97 /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC837E9A3D09A9FFE954A5C088DEFE7 /* JASidePanels-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E48A431F66A51844B9CBD2376C1EEEC /* JASidePanels-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9465BC0A161CE497BA654A581A3D233E /* icon-plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C61BFAEC77B28F2C8E7CC7176C00F483 /* icon-plus@2x.png */; };
+		977B5571FECE86B378ABC237ADACFAD8 /* bg-menuitem-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D9F06AE82C1148600D571492FD2C86 /* bg-menuitem-highlighted@2x.png */; };
+		9BC668C31A01BDC1D64DA9AE37E2A5FB /* AwesomeMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A6BA5F243DECFCCF9EBE202168C2EF /* AwesomeMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EB191035D852C3268433F1B58D91C4B /* icon-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = A37644BFBC3A924C53A29B7964191CB1 /* icon-plus.png */; };
+		A42E865645E20F73FA1013E75556E576 /* bg-addbutton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A3256F99FC4A7B2807E941B804D0D /* bg-addbutton-highlighted@2x.png */; };
+		AD01D434D8D120A3767270766AD30797 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D65E20A9D22167193C9163468C40F2C /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEB8DB142EF00722F872E347FFBAFE39 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		B9265C5014338373805E3E082EE55734 /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F99863DA65467592877320764BB278 /* bg-addbutton-highlighted.png */; };
+		BA88E88A631D6BD023521B7206CE6C25 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8227C958A7FED64ED3084F4C05249901 /* FMDB-dummy.m */; };
+		BEF923433B2ABDC16494E679595CE607 /* AwesomeMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A084FA915B10C3FB2D9062C9319B2165 /* AwesomeMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E5B06D928CA6F7D008335A900727F4 /* iCarousel-dummy.m */; };
+		C8FC0929A42C36174794FE1ADFD620E3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7489E7442CC4203BB7AECE998B3F8A30 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB70685E0E14534D54A43FAD9F63CB91 /* icon-star.png in Resources */ = {isa = PBXBuildFile; fileRef = F6232D50CDE545CFDEE7BD7E41732A3A /* icon-star.png */; };
+		CE8E2CCE9F2A942FDC3221495D0CE294 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D31A65719DB07BB94E975A749E55BC /* AwesomeMenuItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D34BFB0A7EE21F7C29BF6C3C6F64E00C /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5377D2DC9C217D4CCDAA7AC25414 /* JASidePanelController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DB799DAB0DC90414E2EFFAEC75EE4633 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		DC0C379F766664120B08D652F999B9A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
+		DD6A59A3B6EC7B1B2983CBD4F522B1A9 /* bg-addbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD3F9368956A35E15B1A02D4CAB35F /* bg-addbutton@2x.png */; };
+		DE42831D31EF322C58576E18D14149FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		E095D7D5608D5FAE00FC4E4A8CFC2F09 /* AwesomeMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C804BB2776EB72B8916CE906DBDB /* AwesomeMenu-dummy.m */; };
+		E330886E0E7C450E9669C4BD025D9ABD /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0E814EB7509E7C2382272A0E73C3DC /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E59F91541CB9BBF8FD79F85EDEAEBF7D /* bg-menuitem-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E43BF03A6CCCC75AD29DB018F9B2D /* bg-menuitem-highlighted.png */; };
+		F0895B2A83F948153E1E5EA38A230B66 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 464AEDB616DBD3B876B7200729ADD514 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 120BD905C964A9BE784C1351FE7CBEBA /* iCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1DC5A6132E3EC33FA6E23670F2D203A /* bg-menuitem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B64DEBF68E34ED7C390F872E8EE9CF /* bg-menuitem@2x.png */; };
+		F5A0569CB70F6F37A16E32EE210D0C66 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDAF178F3E48ADA682571EA8284C3D /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F6371B4CDB79CD6DDD8F8850EC152E90 /* icon-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61FE85F011224539ED2CAEE4189A5EE4 /* icon-star@2x.png */; };
+		FA83474FF0EEAA7FC81E498BE41B0FB5 /* icon-plus-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC32653BB907A1A0B346F9AE6198387 /* icon-plus-highlighted@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EF6030FA3A50CA7085A3942BD59AB55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23CF27B2BA6AC7125EFFEDA8C5AA819F;
+			remoteInfo = FMDB;
+		};
+		5D5C51B7AC65A6694675985555B8B0C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3634ABA74A6F41DB3C7516A583373EE8;
+			remoteInfo = iCarousel;
+		};
+		C02671E8DD545873A243598383896582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A10CF11677B6035FA394C7B073D5FB1;
+			remoteInfo = AwesomeMenu;
+		};
+		E4E33DB3A2094E3147D557162FB13BB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDEABB547D2583B4B34F75D65153057E;
+			remoteInfo = JASidePanels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011441F341EFA18B2F06929E44791D9E /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		02F490121C6FE32C0B5E4D80C7534BEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E5B06D928CA6F7D008335A900727F4 /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
+		120BD905C964A9BE784C1351FE7CBEBA /* iCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-umbrella.h"; sourceTree = "<group>"; };
+		1272F80739001C43C2F8625337E7B0C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19531A9313884B493C318E6399FD293D /* JASidePanels.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JASidePanels.xcconfig; sourceTree = "<group>"; };
+		2520E3478FE6ED3E5D739335BAFB2B22 /* DeployGateSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeployGateSDK.framework; path = DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework; sourceTree = "<group>"; };
+		252E1AF2CEB2B2A66294F5D80E706E9D /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		25933D5F654EA55BF4143D1EED167077 /* JASidePanelController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JASidePanelController.h; path = JASidePanels/Source/JASidePanelController.h; sourceTree = "<group>"; };
+		275222D61FA6165EBA19B5DA2258DEDC /* JASidePanels.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JASidePanels.modulemap; sourceTree = "<group>"; };
+		2A0E814EB7509E7C2382272A0E73C3DC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		2E7BE1E544682260E682FE636F3C7D1C /* iCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iCarousel.modulemap; sourceTree = "<group>"; };
+		327E43BF03A6CCCC75AD29DB018F9B2D /* bg-menuitem-highlighted.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-menuitem-highlighted.png"; path = "AwesomeMenu/Images/bg-menuitem-highlighted.png"; sourceTree = "<group>"; };
+		3A38DD9193FE764ACF5364911F07037C /* DeployGateSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeployGateSDK.h; path = DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Headers/DeployGateSDK.h; sourceTree = "<group>"; };
+		3FC32653BB907A1A0B346F9AE6198387 /* icon-plus-highlighted@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-plus-highlighted@2x.png"; path = "AwesomeMenu/Images/icon-plus-highlighted@2x.png"; sourceTree = "<group>"; };
+		464AEDB616DBD3B876B7200729ADD514 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		48B64DEBF68E34ED7C390F872E8EE9CF /* bg-menuitem@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-menuitem@2x.png"; path = "AwesomeMenu/Images/bg-menuitem@2x.png"; sourceTree = "<group>"; };
+		4CCED8E9C4CA42D822B7E9528A5ED11B /* AwesomeMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeMenu-prefix.pch"; sourceTree = "<group>"; };
+		4D65E20A9D22167193C9163468C40F2C /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		510FCFF4BBC8E97F2D5BEA3421E3A34B /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+JASidePanel.h"; path = "JASidePanels/Source/UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		54410DEB952D5C4087116D8C05E8B6BA /* JASidePanels-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JASidePanels-prefix.pch"; sourceTree = "<group>"; };
+		5A7A3256F99FC4A7B2807E941B804D0D /* bg-addbutton-highlighted@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-addbutton-highlighted@2x.png"; path = "AwesomeMenu/Images/bg-addbutton-highlighted@2x.png"; sourceTree = "<group>"; };
+		5B7EF63787443BF7EAE180120C3AD4BF /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		61FE85F011224539ED2CAEE4189A5EE4 /* icon-star@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-star@2x.png"; path = "AwesomeMenu/Images/icon-star@2x.png"; sourceTree = "<group>"; };
+		6256CECBFDE2EF959FF541BA4BD9D0FB /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		62D9F06AE82C1148600D571492FD2C86 /* bg-menuitem-highlighted@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-menuitem-highlighted@2x.png"; path = "AwesomeMenu/Images/bg-menuitem-highlighted@2x.png"; sourceTree = "<group>"; };
+		68CF2AF8AC2A5183761491E8CAC21AA8 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		6BDEDCDBE1CF06BD48D6738E32F06F3F /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj; sourceTree = "<group>"; };
+		7489E7442CC4203BB7AECE998B3F8A30 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		74AE8AD7D4A7D0CE87E2659DD264D013 /* icon-plus-highlighted.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-plus-highlighted.png"; path = "AwesomeMenu/Images/icon-plus-highlighted.png"; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7B88DFB57515899973C232321C188382 /* AwesomeMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AwesomeMenu.modulemap; sourceTree = "<group>"; };
+		7C04CC3162EC8D5A05AE883E3D336522 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FMDB.modulemap; sourceTree = "<group>"; };
+		7CE2922A1BABCF642F78C1F8BD62569F /* AwesomeMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6BF7073B7D1EB39790880295FE0402 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8227C958A7FED64ED3084F4C05249901 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		8501A77F9A05D15FBDEDD5B3C1D9EAAA /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj; sourceTree = "<group>"; };
+		86CB8487C65F979A4681FFFD4D32FEA6 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		885C8BBC1AB113A06C3FC7039EF70407 /* bg-addbutton.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-addbutton.png"; path = "AwesomeMenu/Images/bg-addbutton.png"; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8CCEE39C86DFCD9BEA4984415062237B /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
+		8E48A431F66A51844B9CBD2376C1EEEC /* JASidePanels-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JASidePanels-umbrella.h"; sourceTree = "<group>"; };
+		8F0B94BB1D279B5BA769EC62BD2DA134 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		92E1BC94E437002B87897EAFC3D56394 /* bg-menuitem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-menuitem.png"; path = "AwesomeMenu/Images/bg-menuitem.png"; sourceTree = "<group>"; };
+		9712D095EAE90F8E979C9916C4006CA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9FCDAF178F3E48ADA682571EA8284C3D /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		A084FA915B10C3FB2D9062C9319B2165 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AwesomeMenuItem.h; path = AwesomeMenu/AwesomeMenu/AwesomeMenuItem.h; sourceTree = "<group>"; };
+		A37644BFBC3A924C53A29B7964191CB1 /* icon-plus.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-plus.png"; path = "AwesomeMenu/Images/icon-plus.png"; sourceTree = "<group>"; };
+		AC26C804BB2776EB72B8916CE906DBDB /* AwesomeMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AwesomeMenu-dummy.m"; sourceTree = "<group>"; };
+		AEEB4FD51EB633C3A8A4D16C8E13DBC6 /* JASidePanels-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JASidePanels-dummy.m"; sourceTree = "<group>"; };
+		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B1AD2FF8114FAA23F01BAE548211C6E0 /* AwesomeMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomeMenu.xcconfig; sourceTree = "<group>"; };
+		B5CE712FCAF0C150B50943EA6FE2D402 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		B5D31A65719DB07BB94E975A749E55BC /* AwesomeMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AwesomeMenuItem.m; path = AwesomeMenu/AwesomeMenu/AwesomeMenuItem.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCF10B7A89ACE35A72EB8F3DA93D90C2 /* AwesomeMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AwesomeMenu.m; path = AwesomeMenu/AwesomeMenu/AwesomeMenu.m; sourceTree = "<group>"; };
+		C1BE5377D2DC9C217D4CCDAA7AC25414 /* JASidePanelController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JASidePanelController.m; path = JASidePanels/Source/JASidePanelController.m; sourceTree = "<group>"; };
+		C61BFAEC77B28F2C8E7CC7176C00F483 /* icon-plus@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-plus@2x.png"; path = "AwesomeMenu/Images/icon-plus@2x.png"; sourceTree = "<group>"; };
+		C6562EBDA44C9E78E322C29BE2EA3C97 /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		C936DB7003B8ADCB95B47F7C6455DBC7 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+JASidePanel.m"; path = "JASidePanels/Source/UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CCBE44649A465802BA4485939A3DAF00 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		CEAA7BA2E61FDC099E12DC3449B61A7C /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
+		CEFD3F9368956A35E15B1A02D4CAB35F /* bg-addbutton@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-addbutton@2x.png"; path = "AwesomeMenu/Images/bg-addbutton@2x.png"; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D89C3FB4CB84368C792C5BF5A139ED51 /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DA764CEF68560DBF117229ECEA875C90 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A6BA5F243DECFCCF9EBE202168C2EF /* AwesomeMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AwesomeMenu.h; path = AwesomeMenu/AwesomeMenu/AwesomeMenu.h; sourceTree = "<group>"; };
+		E6DCA3ABC21F2B47CEEA4AECE7383344 /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA9B92CE2C83DA494A64BC26C7F7409 /* JASidePanels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JASidePanels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8B1B6769FE3AD474C694EBFE8267AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F99863DA65467592877320764BB278 /* bg-addbutton-highlighted.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg-addbutton-highlighted.png"; path = "AwesomeMenu/Images/bg-addbutton-highlighted.png"; sourceTree = "<group>"; };
+		F6232D50CDE545CFDEE7BD7E41732A3A /* icon-star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-star.png"; path = "AwesomeMenu/Images/icon-star.png"; sourceTree = "<group>"; };
+		FCDBA658C0116637EDDEC7C732E2A273 /* AwesomeMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeMenu-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07163A0956D3012D6BF74E0B0E4CE17D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159DE0890B1201A1AD6D339ECC2D3679 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE992188819B84BEBE67FA87E23797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8244D3331FEE59D26BE9F8CBC4BDEC78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37FBE0835F6A7DCDD3025B59A62F48C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E03728E3356FA3F45B1C1B1D119DEA /* Foundation.framework in Frameworks */,
+				DC0C379F766664120B08D652F999B9A7 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9F2E35C56B78DC1B009161328E2E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB799DAB0DC90414E2EFFAEC75EE4633 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D32DD2168137C9C50ECCB9FE24BE94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE42831D31EF322C58576E18D14149FE /* Foundation.framework in Frameworks */,
+				2E8D975029F4668DD71AFD5B1CAE0FB4 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05DACCFE760138937934FF097CB60E7A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02F490121C6FE32C0B5E4D80C7534BEC /* Info.plist */,
+				275222D61FA6165EBA19B5DA2258DEDC /* JASidePanels.modulemap */,
+				19531A9313884B493C318E6399FD293D /* JASidePanels.xcconfig */,
+				AEEB4FD51EB633C3A8A4D16C8E13DBC6 /* JASidePanels-dummy.m */,
+				54410DEB952D5C4087116D8C05E8B6BA /* JASidePanels-prefix.pch */,
+				8E48A431F66A51844B9CBD2376C1EEEC /* JASidePanels-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JASidePanels";
+			sourceTree = "<group>";
+		};
+		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */,
+				B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3926C638AD0708942C88C2BC89261735 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68EC43ADCCDAC37FB4CB010865A8A496 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				885C8BBC1AB113A06C3FC7039EF70407 /* bg-addbutton.png */,
+				F4F99863DA65467592877320764BB278 /* bg-addbutton-highlighted.png */,
+				5A7A3256F99FC4A7B2807E941B804D0D /* bg-addbutton-highlighted@2x.png */,
+				CEFD3F9368956A35E15B1A02D4CAB35F /* bg-addbutton@2x.png */,
+				92E1BC94E437002B87897EAFC3D56394 /* bg-menuitem.png */,
+				327E43BF03A6CCCC75AD29DB018F9B2D /* bg-menuitem-highlighted.png */,
+				62D9F06AE82C1148600D571492FD2C86 /* bg-menuitem-highlighted@2x.png */,
+				48B64DEBF68E34ED7C390F872E8EE9CF /* bg-menuitem@2x.png */,
+				A37644BFBC3A924C53A29B7964191CB1 /* icon-plus.png */,
+				74AE8AD7D4A7D0CE87E2659DD264D013 /* icon-plus-highlighted.png */,
+				3FC32653BB907A1A0B346F9AE6198387 /* icon-plus-highlighted@2x.png */,
+				C61BFAEC77B28F2C8E7CC7176C00F483 /* icon-plus@2x.png */,
+				F6232D50CDE545CFDEE7BD7E41732A3A /* icon-star.png */,
+				61FE85F011224539ED2CAEE4189A5EE4 /* icon-star@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D7F8A38BC926CAE2BB8EDC37663B303F /* Pods */,
+				94F428ECF29D970CFC4F92732FE66285 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED9E0E0C95DB975271EDF1BADE96D12 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				C6562EBDA44C9E78E322C29BE2EA3C97 /* iCarousel.h */,
+				D89C3FB4CB84368C792C5BF5A139ED51 /* iCarousel.m */,
+				FC8E630C4637ACA98EE31D8D4E3A1270 /* Support Files */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		94F428ECF29D970CFC4F92732FE66285 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CE2922A1BABCF642F78C1F8BD62569F /* AwesomeMenu.framework */,
+				DA764CEF68560DBF117229ECEA875C90 /* FMDB.framework */,
+				E6DCA3ABC21F2B47CEEA4AECE7383344 /* iCarousel.framework */,
+				ECA9B92CE2C83DA494A64BC26C7F7409 /* JASidePanels.framework */,
+				1272F80739001C43C2F8625337E7B0C8 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A64F0CF6A8E205C64E56DB57B5106F2D /* DeployGateSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3A38DD9193FE764ACF5364911F07037C /* DeployGateSDK.h */,
+				FEEBF456A82E8AB3262F57649937E107 /* Frameworks */,
+				B53546559EEB5115141E42CF5F045617 /* Resources */,
+			);
+			path = DeployGateSDK;
+			sourceTree = "<group>";
+		};
+		A8A90276DD88D7313F4012040D29ED76 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B88DFB57515899973C232321C188382 /* AwesomeMenu.modulemap */,
+				B1AD2FF8114FAA23F01BAE548211C6E0 /* AwesomeMenu.xcconfig */,
+				AC26C804BB2776EB72B8916CE906DBDB /* AwesomeMenu-dummy.m */,
+				4CCED8E9C4CA42D822B7E9528A5ED11B /* AwesomeMenu-prefix.pch */,
+				FCDBA658C0116637EDDEC7C732E2A273 /* AwesomeMenu-umbrella.h */,
+				7E6BF7073B7D1EB39790880295FE0402 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AwesomeMenu";
+			sourceTree = "<group>";
+		};
+		AF11A4925655BF70A3075B2CAACB1E77 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C04CC3162EC8D5A05AE883E3D336522 /* FMDB.modulemap */,
+				011441F341EFA18B2F06929E44791D9E /* FMDB.xcconfig */,
+				8227C958A7FED64ED3084F4C05249901 /* FMDB-dummy.m */,
+				B5CE712FCAF0C150B50943EA6FE2D402 /* FMDB-prefix.pch */,
+				4D65E20A9D22167193C9163468C40F2C /* FMDB-umbrella.h */,
+				EF8B1B6769FE3AD474C694EBFE8267AD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		B53546559EEB5115141E42CF5F045617 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BDEDCDBE1CF06BD48D6738E32F06F3F /* en.lproj */,
+				8501A77F9A05D15FBDEDD5B3C1D9EAAA /* ja.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C7068DC9867E502FBB061DB033A48ED9 /* JASidePanels */ = {
+			isa = PBXGroup;
+			children = (
+				25933D5F654EA55BF4143D1EED167077 /* JASidePanelController.h */,
+				C1BE5377D2DC9C217D4CCDAA7AC25414 /* JASidePanelController.m */,
+				510FCFF4BBC8E97F2D5BEA3421E3A34B /* UIViewController+JASidePanel.h */,
+				C936DB7003B8ADCB95B47F7C6455DBC7 /* UIViewController+JASidePanel.m */,
+				05DACCFE760138937934FF097CB60E7A /* Support Files */,
+			);
+			path = JASidePanels;
+			sourceTree = "<group>";
+		};
+		CBDDC43641C1EF990BB53084A6FCCBB0 /* AwesomeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E4A6BA5F243DECFCCF9EBE202168C2EF /* AwesomeMenu.h */,
+				BCF10B7A89ACE35A72EB8F3DA93D90C2 /* AwesomeMenu.m */,
+				A084FA915B10C3FB2D9062C9319B2165 /* AwesomeMenuItem.h */,
+				B5D31A65719DB07BB94E975A749E55BC /* AwesomeMenuItem.m */,
+				68EC43ADCCDAC37FB4CB010865A8A496 /* Resources */,
+				A8A90276DD88D7313F4012040D29ED76 /* Support Files */,
+			);
+			path = AwesomeMenu;
+			sourceTree = "<group>";
+		};
+		D7F8A38BC926CAE2BB8EDC37663B303F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDC43641C1EF990BB53084A6FCCBB0 /* AwesomeMenu */,
+				A64F0CF6A8E205C64E56DB57B5106F2D /* DeployGateSDK */,
+				EFF85F9689158839DAD7E81D3ADC38DC /* FMDB */,
+				8ED9E0E0C95DB975271EDF1BADE96D12 /* iCarousel */,
+				C7068DC9867E502FBB061DB033A48ED9 /* JASidePanels */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD623230A3B2BC943E00CE592F962E37 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				8F0B94BB1D279B5BA769EC62BD2DA134 /* FMDatabase.h */,
+				9FCDAF178F3E48ADA682571EA8284C3D /* FMDatabase.m */,
+				86CB8487C65F979A4681FFFD4D32FEA6 /* FMDatabaseAdditions.h */,
+				464AEDB616DBD3B876B7200729ADD514 /* FMDatabaseAdditions.m */,
+				CCBE44649A465802BA4485939A3DAF00 /* FMDatabasePool.h */,
+				7489E7442CC4203BB7AECE998B3F8A30 /* FMDatabasePool.m */,
+				2A0E814EB7509E7C2382272A0E73C3DC /* FMDatabaseQueue.h */,
+				6256CECBFDE2EF959FF541BA4BD9D0FB /* FMDatabaseQueue.m */,
+				5B7EF63787443BF7EAE180120C3AD4BF /* FMDB.h */,
+				252E1AF2CEB2B2A66294F5D80E706E9D /* FMResultSet.h */,
+				68CF2AF8AC2A5183761491E8CAC21AA8 /* FMResultSet.m */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		EFF85F9689158839DAD7E81D3ADC38DC /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				DD623230A3B2BC943E00CE592F962E37 /* standard */,
+				AF11A4925655BF70A3075B2CAACB1E77 /* Support Files */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		FC8E630C4637ACA98EE31D8D4E3A1270 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E7BE1E544682260E682FE636F3C7D1C /* iCarousel.modulemap */,
+				8CCEE39C86DFCD9BEA4984415062237B /* iCarousel.xcconfig */,
+				09E5B06D928CA6F7D008335A900727F4 /* iCarousel-dummy.m */,
+				CEAA7BA2E61FDC099E12DC3449B61A7C /* iCarousel-prefix.pch */,
+				120BD905C964A9BE784C1351FE7CBEBA /* iCarousel-umbrella.h */,
+				9712D095EAE90F8E979C9916C4006CA2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iCarousel";
+			sourceTree = "<group>";
+		};
+		FEEBF456A82E8AB3262F57649937E107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2520E3478FE6ED3E5D739335BAFB2B22 /* DeployGateSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40EEEBC304853684165654A97A671DEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */,
+				88D2980E7DDCE7BECD28FF1E9074D2AE /* iCarousel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5711FF2CC443B67B65BCF3C789AA4D5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F4A7F6F1B281F966419A511FB67D1A /* JASidePanelController.h in Headers */,
+				8EC837E9A3D09A9FFE954A5C088DEFE7 /* JASidePanels-umbrella.h in Headers */,
+				1F33CCA7CCD0FA8DB2CC3E6B0EF3FE7F /* UIViewController+JASidePanel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E8F363C0C0E8FCA26A395B8351D925 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DC1C7C51EF6447E6D6166A99CEB512 /* AwesomeMenu-umbrella.h in Headers */,
+				9BC668C31A01BDC1D64DA9AE37E2A5FB /* AwesomeMenu.h in Headers */,
+				BEF923433B2ABDC16494E679595CE607 /* AwesomeMenuItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A1B98F16F13F2F72C375E44D51EE8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F61BE79D4B46C119C136EDE960CE78C /* FMDatabase.h in Headers */,
+				74695802583BDB0C0818AC1B97F63815 /* FMDatabaseAdditions.h in Headers */,
+				6C63E2BEBE2BC08BD46F6A91D0A08143 /* FMDatabasePool.h in Headers */,
+				E330886E0E7C450E9669C4BD025D9ABD /* FMDatabaseQueue.h in Headers */,
+				AD01D434D8D120A3767270766AD30797 /* FMDB-umbrella.h in Headers */,
+				3ECC23FFAE400A6B2658AAF2990D83BE /* FMDB.h in Headers */,
+				183A0D8AF38E0EE20E47F1FEF9B37327 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C78F32E0BA981A2A41A8A8A5CF178193 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343ADE1FD2C74F9FD12362A26BC981A7 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		23CF27B2BA6AC7125EFFEDA8C5AA819F /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E130BB4A68655453C9FDC5692FA44094 /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				6F019F4B57C689E3B448935B617CFF76 /* Sources */,
+				07163A0956D3012D6BF74E0B0E4CE17D /* Frameworks */,
+				A8A1B98F16F13F2F72C375E44D51EE8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = DA764CEF68560DBF117229ECEA875C90 /* FMDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FD84838098E65920773FE786596F03E /* Build configuration list for PBXNativeTarget "iCarousel" */;
+			buildPhases = (
+				B5A1DBA438165C92401162C362D91E3E /* Sources */,
+				C2D32DD2168137C9C50ECCB9FE24BE94 /* Frameworks */,
+				40EEEBC304853684165654A97A671DEC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCarousel;
+			productName = iCarousel;
+			productReference = E6DCA3ABC21F2B47CEEA4AECE7383344 /* iCarousel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A10CF11677B6035FA394C7B073D5FB1 /* AwesomeMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9C6A4B74070D46400AB62EB37E9A6D8 /* Build configuration list for PBXNativeTarget "AwesomeMenu" */;
+			buildPhases = (
+				568B253764561FA03547BEFF325D7F20 /* Sources */,
+				22DE992188819B84BEBE67FA87E23797 /* Frameworks */,
+				90E8F363C0C0E8FCA26A395B8351D925 /* Headers */,
+				B2A8D73455C05E40585C18B84641775A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeMenu;
+			productName = AwesomeMenu;
+			productReference = 7CE2922A1BABCF642F78C1F8BD62569F /* AwesomeMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDEABB547D2583B4B34F75D65153057E /* JASidePanels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F93654A24BAAF03906B56205EFA067 /* Build configuration list for PBXNativeTarget "JASidePanels" */;
+			buildPhases = (
+				C90FA4DACE1AEB9D3D6249C261658FBA /* Sources */,
+				37FBE0835F6A7DCDD3025B59A62F48C0 /* Frameworks */,
+				5711FF2CC443B67B65BCF3C789AA4D5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JASidePanels;
+			productName = JASidePanels;
+			productReference = ECA9B92CE2C83DA494A64BC26C7F7409 /* JASidePanels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E52A6FCDEDF258DC243580FE6D1416CB /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F69474FF24950DCFCFB99C608095CA /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				AD3F82D6855B9EC017A6A3903300C76D /* Sources */,
+				BD9F2E35C56B78DC1B009161328E2E17 /* Frameworks */,
+				C78F32E0BA981A2A41A8A8A5CF178193 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD34ECD53745DB2B54D5C981BC050A9 /* PBXTargetDependency */,
+				9DCBB62501A4E5668F60BF33016C0F2B /* PBXTargetDependency */,
+				1B5B2EBA0FA3E5ADCD25C6765E05BAEE /* PBXTargetDependency */,
+				AA397565EE32B84A353B0459591E63EC /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 1272F80739001C43C2F8625337E7B0C8 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 94F428ECF29D970CFC4F92732FE66285 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A10CF11677B6035FA394C7B073D5FB1 /* AwesomeMenu */,
+				23CF27B2BA6AC7125EFFEDA8C5AA819F /* FMDB */,
+				3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */,
+				CDEABB547D2583B4B34F75D65153057E /* JASidePanels */,
+				E52A6FCDEDF258DC243580FE6D1416CB /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2A8D73455C05E40585C18B84641775A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9265C5014338373805E3E082EE55734 /* bg-addbutton-highlighted.png in Resources */,
+				A42E865645E20F73FA1013E75556E576 /* bg-addbutton-highlighted@2x.png in Resources */,
+				845C63882C75878FA2F58FCD67DDC533 /* bg-addbutton.png in Resources */,
+				DD6A59A3B6EC7B1B2983CBD4F522B1A9 /* bg-addbutton@2x.png in Resources */,
+				E59F91541CB9BBF8FD79F85EDEAEBF7D /* bg-menuitem-highlighted.png in Resources */,
+				977B5571FECE86B378ABC237ADACFAD8 /* bg-menuitem-highlighted@2x.png in Resources */,
+				32C03BCAD315354BA4B92021611EB58E /* bg-menuitem.png in Resources */,
+				F1DC5A6132E3EC33FA6E23670F2D203A /* bg-menuitem@2x.png in Resources */,
+				74FCE208C17E237824985E5665A3BC9C /* icon-plus-highlighted.png in Resources */,
+				FA83474FF0EEAA7FC81E498BE41B0FB5 /* icon-plus-highlighted@2x.png in Resources */,
+				9EB191035D852C3268433F1B58D91C4B /* icon-plus.png in Resources */,
+				9465BC0A161CE497BA654A581A3D233E /* icon-plus@2x.png in Resources */,
+				CB70685E0E14534D54A43FAD9F63CB91 /* icon-star.png in Resources */,
+				F6371B4CDB79CD6DDD8F8850EC152E90 /* icon-star@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		568B253764561FA03547BEFF325D7F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E095D7D5608D5FAE00FC4E4A8CFC2F09 /* AwesomeMenu-dummy.m in Sources */,
+				651C7C3A437AE56D7B814A3516148632 /* AwesomeMenu.m in Sources */,
+				CE8E2CCE9F2A942FDC3221495D0CE294 /* AwesomeMenuItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F019F4B57C689E3B448935B617CFF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0569CB70F6F37A16E32EE210D0C66 /* FMDatabase.m in Sources */,
+				F0895B2A83F948153E1E5EA38A230B66 /* FMDatabaseAdditions.m in Sources */,
+				C8FC0929A42C36174794FE1ADFD620E3 /* FMDatabasePool.m in Sources */,
+				0D619A711F71058C9238B17E9AF48AFC /* FMDatabaseQueue.m in Sources */,
+				BA88E88A631D6BD023521B7206CE6C25 /* FMDB-dummy.m in Sources */,
+				7C818AE74E830311E61FF1A7E42D0713 /* FMResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3F82D6855B9EC017A6A3903300C76D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB8DB142EF00722F872E347FFBAFE39 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A1DBA438165C92401162C362D91E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */,
+				10C86995D04A48756AE4797CFFEDD69A /* iCarousel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90FA4DACE1AEB9D3D6249C261658FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34BFB0A7EE21F7C29BF6C3C6F64E00C /* JASidePanelController.m in Sources */,
+				4F45D91AA84AC3E7A3E304C794BA2390 /* JASidePanels-dummy.m in Sources */,
+				16B27943315A1B59B232CFEBF4B92E8B /* UIViewController+JASidePanel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B5B2EBA0FA3E5ADCD25C6765E05BAEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JASidePanels;
+			target = CDEABB547D2583B4B34F75D65153057E /* JASidePanels */;
+			targetProxy = E4E33DB3A2094E3147D557162FB13BB5 /* PBXContainerItemProxy */;
+		};
+		9DCBB62501A4E5668F60BF33016C0F2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 23CF27B2BA6AC7125EFFEDA8C5AA819F /* FMDB */;
+			targetProxy = 3EF6030FA3A50CA7085A3942BD59AB55 /* PBXContainerItemProxy */;
+		};
+		AA397565EE32B84A353B0459591E63EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iCarousel;
+			target = 3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */;
+			targetProxy = 5D5C51B7AC65A6694675985555B8B0C7 /* PBXContainerItemProxy */;
+		};
+		DAD34ECD53745DB2B54D5C981BC050A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AwesomeMenu;
+			target = 7A10CF11677B6035FA394C7B073D5FB1 /* AwesomeMenu */;
+			targetProxy = C02671E8DD545873A243598383896582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		098B43CD7ECB545FCACAD23A48BC7E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1AD2FF8114FAA23F01BAE548211C6E0 /* AwesomeMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AwesomeMenu/AwesomeMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AwesomeMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AwesomeMenu/AwesomeMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AwesomeMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43D702C7F2C1B29EFFA93160EE1EEA59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1AD2FF8114FAA23F01BAE548211C6E0 /* AwesomeMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AwesomeMenu/AwesomeMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AwesomeMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AwesomeMenu/AwesomeMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AwesomeMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55C4735D566D9531C33346A6115AB562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B5D6A56FCE27205775C7CF49E98C73D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011441F341EFA18B2F06929E44791D9E /* FMDB.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		741CA30F948101D0BD38F6421E490062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		866FFA8AF62D563948BC9C2518BCA983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011441F341EFA18B2F06929E44791D9E /* FMDB.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A493BB39ECE2377EA5656E755B1091D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCEE39C86DFCD9BEA4984415062237B /* iCarousel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B558A05F12E23C1D29C41FB8D1A7FE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19531A9313884B493C318E6399FD293D /* JASidePanels.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JASidePanels/JASidePanels-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JASidePanels/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JASidePanels/JASidePanels.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JASidePanels;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5663C948FD03143782E8E2FE285CC0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19531A9313884B493C318E6399FD293D /* JASidePanels.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JASidePanels/JASidePanels-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JASidePanels/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JASidePanels/JASidePanels.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JASidePanels;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4F520C2BE79EF6DD101DA44F1157729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCEE39C86DFCD9BEA4984415062237B /* iCarousel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FD84838098E65920773FE786596F03E /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F520C2BE79EF6DD101DA44F1157729 /* Debug */,
+				8A493BB39ECE2377EA5656E755B1091D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F93654A24BAAF03906B56205EFA067 /* Build configuration list for PBXNativeTarget "JASidePanels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B558A05F12E23C1D29C41FB8D1A7FE42 /* Debug */,
+				C5663C948FD03143782E8E2FE285CC0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F69474FF24950DCFCFB99C608095CA /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741CA30F948101D0BD38F6421E490062 /* Debug */,
+				55C4735D566D9531C33346A6115AB562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E130BB4A68655453C9FDC5692FA44094 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5D6A56FCE27205775C7CF49E98C73D /* Debug */,
+				866FFA8AF62D563948BC9C2518BCA983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9C6A4B74070D46400AB62EB37E9A6D8 /* Build configuration list for PBXNativeTarget "AwesomeMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D702C7F2C1B29EFFA93160EE1EEA59 /* Debug */,
+				098B43CD7ECB545FCACAD23A48BC7E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

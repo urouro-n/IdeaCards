@@ -1,7 +1,7 @@
 #import "EditController.h"
 #import "AppDelegate.h"
-#import "TopController.h"
 #import "ICItemManager.h"
+#import "IdeaCards-Swift.h"
 
 @interface EditController ()
 <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
