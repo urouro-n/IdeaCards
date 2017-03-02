@@ -1,5 +1,4 @@
 #import "AppDelegate.h"
-#import "EditController.h"
 #import "TopController.h"
 #import <DeployGateSDK/DeployGateSDK.h>
 
