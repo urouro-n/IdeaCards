@@ -11,10 +11,10 @@ import MessageUI
 
 class MenuController: UITableViewController, MFMailComposeViewControllerDelegate {
     
-    @IBOutlet private weak var memoCountLabel: UILabel!
-    @IBOutlet private weak var versionLabel: UILabel!
+    @IBOutlet fileprivate weak var memoCountLabel: UILabel!
+    @IBOutlet fileprivate weak var versionLabel: UILabel!
     
-    private lazy var memoCount: Int = ICDaoMemo.defaultInstance().countMemos()
+    fileprivate lazy var memoCount: Int = ICDaoMemo.defaultInstance().countMemos()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,29 +23,29 @@ class MenuController: UITableViewController, MFMailComposeViewControllerDelegate
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(
             title: "閉じる",
-            style: .Plain,
+            style: .plain,
             target: self,
-            action: "onCloseItem:"
+            action: #selector(MenuController.onCloseItem(_:))
         )
     }
     
-    func onCloseItem(item: UIBarButtonItem) {
-        dismissViewControllerAnimated(true, completion: nil)
+    func onCloseItem(_ item: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
         if indexPath.section == 0 && indexPath.row == 0 {
             cell.detailTextLabel?.text = String(memoCount)
         } else if indexPath.section == 1 && indexPath.row == 1 {
-            cell.detailTextLabel?.text = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as? String
+            cell.detailTextLabel?.text = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
         }
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == 0 {
             navigationController?.pushViewController(MemoListController(), animated: true)
         } else if indexPath.section == 1 && indexPath.row == 0 {
@@ -53,14 +53,14 @@ class MenuController: UITableViewController, MFMailComposeViewControllerDelegate
             controller.mailComposeDelegate = self
             controller.setToRecipients(["info@urouro.net"])
             controller.setSubject("アイデアカードへのフィードバック")
-            presentViewController(controller, animated: true, completion: nil)
+            present(controller, animated: true, completion: nil)
         }
         
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
 }

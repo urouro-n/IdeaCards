@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371710B51E6865DC0077C621 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 371710B41E6865DC0077C621 /* libsqlite3.0.tbd */; };
+		37D9C8851E68682700684C76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D9C8841E68682700684C76 /* main.m */; };
 		9BB28F58C13D1ED99F9497D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD65D74655A953E8E373A090 /* Pods.framework */; };
 		AB2437121C43C76B00FD51D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437111C43C76B00FD51D9 /* AppDelegate.m */; };
 		AB2437221C43C77500FD51D9 /* EditController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437161C43C77500FD51D9 /* EditController.m */; };
@@ -37,22 +39,20 @@
 		ABB66D231C980F8A00849D26 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB66D221C980F8A00849D26 /* MenuController.swift */; };
 		ABC9E79C1C782F8A00F3D8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC9E79B1C782F8A00F3D8A6 /* Images.xcassets */; };
 		ABC9E79E1C7833D500F3D8A6 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9E79D1C7833D500F3D8A6 /* TopController.swift */; };
-		ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB01C4A611B0018C8B3 /* Env.plist */; };
 		ABE2BBB51C4A68710018C8B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2BBB31C4A68710018C8B3 /* Main.storyboard */; };
 		ABE2BBBA1C4A6E590018C8B3 /* PanelBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */; };
 		B12E279F172567B40090B797 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E279E172567B40090B797 /* QuartzCore.framework */; };
-		B160F98D17292ED800F6A332 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B160F98C17292ED800F6A332 /* libsqlite3.0.dylib */; };
 		B160F99817293F5C00F6A332 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B160F99717293F5C00F6A332 /* MessageUI.framework */; };
-		B160F99A1729423A00F6A332 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B160F9991729423A00F6A332 /* Twitter.framework */; };
 		B18954E3171EBCC700B205B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18954E2171EBCC700B205B4 /* UIKit.framework */; };
 		B18954E5171EBCC700B205B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18954E4171EBCC700B205B4 /* Foundation.framework */; };
 		B18954E7171EBCC700B205B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18954E6171EBCC700B205B4 /* CoreGraphics.framework */; };
 		B18954ED171EBCC700B205B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B18954EB171EBCC700B205B4 /* InfoPlist.strings */; };
-		B18954EF171EBCC700B205B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B18954EE171EBCC700B205B4 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18CE05956AE751B12F661BBE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		371710B41E6865DC0077C621 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		37D9C8841E68682700684C76 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IdeaCards/main.m; sourceTree = SOURCE_ROOT; };
 		8B666A3DD748842174126667 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB2437101C43C76B00FD51D9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IdeaCards/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		AB2437111C43C76B00FD51D9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IdeaCards/AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -90,22 +90,18 @@
 		ABB66D221C980F8A00849D26 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		ABC9E79B1C782F8A00F3D8A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IdeaCards/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		ABC9E79D1C7833D500F3D8A6 /* TopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
-		ABE2BBB01C4A611B0018C8B3 /* Env.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Env.plist; sourceTree = SOURCE_ROOT; };
 		ABE2BBB41C4A68710018C8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IdeaCards/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		ABE2BBB61C4A6A4E0018C8B3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = IdeaCards/BridgingHeader.h; sourceTree = "<group>"; };
 		ABE2BBB91C4A6E590018C8B3 /* PanelBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelBaseController.swift; sourceTree = "<group>"; };
 		B12E279E172567B40090B797 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B160F98C17292ED800F6A332 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		B160F99717293F5C00F6A332 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		B160F9991729423A00F6A332 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		B18954DF171EBCC700B205B4 /* IdeaCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18954E2171EBCC700B205B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18954E4171EBCC700B205B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B18954E6171EBCC700B205B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B18954EA171EBCC700B205B4 /* IdeaCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "IdeaCards-Info.plist"; path = "IdeaCards/IdeaCards-Info.plist"; sourceTree = "<group>"; };
 		B18954EC171EBCC700B205B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B18954EE171EBCC700B205B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../IdeaCards/main.m; sourceTree = "<group>"; };
-		B18954F0171EBCC700B205B4 /* IdeaCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IdeaCards-Prefix.pch"; path = "../IdeaCards/IdeaCards-Prefix.pch"; sourceTree = "<group>"; };
+		B18954F0171EBCC700B205B4 /* IdeaCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IdeaCards-Prefix.pch"; path = "IdeaCards/IdeaCards-Prefix.pch"; sourceTree = "<group>"; };
 		FD65D74655A953E8E373A090 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,9 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B160F99A1729423A00F6A332 /* Twitter.framework in Frameworks */,
+				371710B51E6865DC0077C621 /* libsqlite3.0.tbd in Frameworks */,
 				B160F99817293F5C00F6A332 /* MessageUI.framework in Frameworks */,
-				B160F98D17292ED800F6A332 /* libsqlite3.0.dylib in Frameworks */,
 				B12E279F172567B40090B797 /* QuartzCore.framework in Frameworks */,
 				B18954E3171EBCC700B205B4 /* UIKit.framework in Frameworks */,
 				B18954E5171EBCC700B205B4 /* Foundation.framework in Frameworks */,
@@ -231,9 +226,8 @@
 		B18954E1171EBCC700B205B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B160F9991729423A00F6A332 /* Twitter.framework */,
+				371710B41E6865DC0077C621 /* libsqlite3.0.tbd */,
 				B160F99717293F5C00F6A332 /* MessageUI.framework */,
-				B160F98C17292ED800F6A332 /* libsqlite3.0.dylib */,
 				B12E279E172567B40090B797 /* QuartzCore.framework */,
 				B18954E2171EBCC700B205B4 /* UIKit.framework */,
 				B18954E4171EBCC700B205B4 /* Foundation.framework */,
@@ -259,15 +253,14 @@
 		B18954E9171EBCC700B205B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37D9C8841E68682700684C76 /* main.m */,
 				ABE2BBB61C4A6A4E0018C8B3 /* BridgingHeader.h */,
 				AB2437281C43C7CE00FD51D9 /* Default-568h@2x.png */,
 				AB2437291C43C7CE00FD51D9 /* Default.png */,
 				AB24372A1C43C7CE00FD51D9 /* Default@2x.png */,
 				B18954EA171EBCC700B205B4 /* IdeaCards-Info.plist */,
 				B18954EB171EBCC700B205B4 /* InfoPlist.strings */,
-				B18954EE171EBCC700B205B4 /* main.m */,
 				B18954F0171EBCC700B205B4 /* IdeaCards-Prefix.pch */,
-				ABE2BBB01C4A611B0018C8B3 /* Env.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -307,6 +300,7 @@
 				TargetAttributes = {
 					B18954DE171EBCC700B205B4 = {
 						DevelopmentTeam = U34SUZJMKE;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -338,7 +332,6 @@
 				AB24372D1C43C7CE00FD51D9 /* Default@2x.png in Resources */,
 				AB2437561C43C7D700FD51D9 /* menu_item_on.png in Resources */,
 				AB2437481C43C7D700FD51D9 /* menu_base.png in Resources */,
-				ABE2BBB11C4A611B0018C8B3 /* Env.plist in Resources */,
 				B18954ED171EBCC700B205B4 /* InfoPlist.strings in Resources */,
 				ABE2BBB51C4A68710018C8B3 /* Main.storyboard in Resources */,
 				AB2437491C43C7D700FD51D9 /* menu_base@2x.png in Resources */,
@@ -415,7 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABC9E79E1C7833D500F3D8A6 /* TopController.swift in Sources */,
-				B18954EF171EBCC700B205B4 /* main.m in Sources */,
 				AB2437241C43C77500FD51D9 /* MemoListController.m in Sources */,
 				AB2437271C43C77500FD51D9 /* ICMemo.m in Sources */,
 				AB2437121C43C76B00FD51D9 /* AppDelegate.m in Sources */,
@@ -424,6 +416,7 @@
 				AB2437221C43C77500FD51D9 /* EditController.m in Sources */,
 				AB2437261C43C77500FD51D9 /* ICItemManager.m in Sources */,
 				ABE2BBBA1C4A6E590018C8B3 /* PanelBaseController.swift in Sources */,
+				37D9C8851E68682700684C76 /* main.m in Sources */,
 				AB2437231C43C77500FD51D9 /* MemoInputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +519,7 @@
 				PRODUCT_NAME = IdeaCards;
 				SWIFT_OBJC_BRIDGING_HEADER = IdeaCards/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,6 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.urouro.IdeaCards;
 				PRODUCT_NAME = IdeaCards;
 				SWIFT_OBJC_BRIDGING_HEADER = IdeaCards/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -249,20 +249,21 @@
 
 - (void)_sendTwitter:(NSString *)body
 {
-    TWTweetComposeViewController *controller = [TWTweetComposeViewController new];
-    [controller setInitialText:body];
-    
-    controller.completionHandler = ^(TWTweetComposeViewControllerResult result) {
-        if(result == TWTweetComposeViewControllerResultCancelled){
-            LOG(@"cancel");
-        }else if(result == TWTweetComposeViewControllerResultDone){
-            LOG(@"success");
-        }
-        
-        [self dismissModalViewControllerAnimated:YES];
-    };
-    
-    [self presentModalViewController:controller animated:YES];
+    // TODO: Replace to Social framework
+//    TWTweetComposeViewController *controller = [TWTweetComposeViewController new];
+//    [controller setInitialText:body];
+//    
+//    controller.completionHandler = ^(TWTweetComposeViewControllerResult result) {
+//        if(result == TWTweetComposeViewControllerResultCancelled){
+//            LOG(@"cancel");
+//        }else if(result == TWTweetComposeViewControllerResultDone){
+//            LOG(@"success");
+//        }
+//        
+//        [self dismissModalViewControllerAnimated:YES];
+//    };
+//    
+//    [self presentModalViewController:controller animated:YES];
 }
 
 @end
