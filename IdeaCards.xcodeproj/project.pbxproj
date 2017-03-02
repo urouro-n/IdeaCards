@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		371710B51E6865DC0077C621 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 371710B41E6865DC0077C621 /* libsqlite3.0.tbd */; };
 		37D9C8851E68682700684C76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D9C8841E68682700684C76 /* main.m */; };
+		37D9C8881E6868C900684C76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D9C8861E6868C900684C76 /* LaunchScreen.xib */; };
 		9BB28F58C13D1ED99F9497D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD65D74655A953E8E373A090 /* Pods.framework */; };
 		AB2437121C43C76B00FD51D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437111C43C76B00FD51D9 /* AppDelegate.m */; };
 		AB2437221C43C77500FD51D9 /* EditController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2437161C43C77500FD51D9 /* EditController.m */; };
@@ -53,6 +54,7 @@
 		18CE05956AE751B12F661BBE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		371710B41E6865DC0077C621 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		37D9C8841E68682700684C76 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IdeaCards/main.m; sourceTree = SOURCE_ROOT; };
+		37D9C8871E6868C900684C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = IdeaCards/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
 		8B666A3DD748842174126667 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB2437101C43C76B00FD51D9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IdeaCards/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		AB2437111C43C76B00FD51D9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IdeaCards/AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE2BBB31C4A68710018C8B3 /* Main.storyboard */,
+				37D9C8861E6868C900684C76 /* LaunchScreen.xib */,
 			);
 			name = UserInterfaces;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				AB2437531C43C7D700FD51D9 /* menu_icon_more@2x.png in Resources */,
 				AB24374A1C43C7D700FD51D9 /* menu_base_on.png in Resources */,
 				AB2437521C43C7D700FD51D9 /* menu_icon_more.png in Resources */,
+				37D9C8881E6868C900684C76 /* LaunchScreen.xib in Resources */,
 				AB24372C1C43C7CE00FD51D9 /* Default.png in Resources */,
 				AB2437501C43C7D700FD51D9 /* menu_icon_list.png in Resources */,
 				AB24374E1C43C7D700FD51D9 /* menu_icon_help.png in Resources */,
@@ -424,6 +428,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		37D9C8861E6868C900684C76 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37D9C8871E6868C900684C76 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 		ABE2BBB31C4A68710018C8B3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
