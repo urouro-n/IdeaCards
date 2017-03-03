@@ -51,7 +51,7 @@ class MenuController: UITableViewController, MFMailComposeViewControllerDelegate
         } else if indexPath.section == 1 && indexPath.row == 0 {
             let controller = MFMailComposeViewController()
             controller.mailComposeDelegate = self
-            controller.setToRecipients(["info@urouro.net"])
+            controller.setToRecipients(["urouro.app@gmail.com"])
             controller.setSubject("アイデアカードへのフィードバック")
             present(controller, animated: true, completion: nil)
         }
