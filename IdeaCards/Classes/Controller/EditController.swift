@@ -26,7 +26,7 @@ class EditController: UIViewController {
         case .left:
             v.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         case .right:
-            v.contentInset = UIEdgeInsets(top: 0.0, left: 16.0, bottom: 0.0, right: 0.0)
+            v.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         }
 
         
@@ -130,9 +130,9 @@ extension EditController {
         case .portrait, .portraitUpsideDown, .unknown:
             switch type {
             case .right:
-                tableView.frame = CGRect(x: 30.0,
+                tableView.frame = CGRect(x: 40.0,
                                          y: 0.0,
-                                         width: view.frame.size.width - 30.0,
+                                         width: view.frame.size.width - 40.0,
                                          height: view.frame.size.height)
                 addField.frame = CGRect(x: 56.0,
                                         y: 5.0,
@@ -141,7 +141,7 @@ extension EditController {
             case .left:
                 tableView.frame = CGRect(x: 0.0,
                                          y: 0.0,
-                                         width: view.frame.size.width,
+                                         width: view.frame.size.width - 40.0,
                                          height: view.frame.size.height)
                 addField.frame = CGRect(x: 16.0,
                                         y: 5.0,
