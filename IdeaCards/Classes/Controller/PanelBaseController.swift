@@ -17,12 +17,12 @@ class PanelBaseController: JASidePanelController {
         buildUI()
     }
     
-    private func buildUI() {
-        let topController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TopController") as! TopController
+    fileprivate func buildUI() {
+        let topController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TopController") as! TopController
         let leftController = EditController()
-        leftController.type = EditTypeLeft
+        leftController.type = .left
         let rightController = EditController()
-        rightController.type = EditTypeRight
+        rightController.type = .right
         
         let topNav = UINavigationController(rootViewController: topController)
         topNav.setNavigationBarHidden(true, animated: false)

@@ -5,7 +5,7 @@
 #import <JASidePanels/JASidePanelController.h>
 #import <iCarousel/iCarousel.h>
 
-#import "EditController.h"
+#import "AppDelegate.h"
 #import "ICDaoMemo.h"
 #import "ICItemManager.h"
 #import "MemoInputController.h"

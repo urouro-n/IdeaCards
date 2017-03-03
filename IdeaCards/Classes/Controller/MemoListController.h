@@ -1,7 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
-#import <Twitter/Twitter.h>
 
 @interface MemoListController : UIViewController
 

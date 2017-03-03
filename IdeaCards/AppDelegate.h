@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "JASidePanelController.h"
+#import <JASidePanels/JASidePanelController.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
