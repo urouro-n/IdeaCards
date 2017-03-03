@@ -18,43 +18,18 @@ class EditController: UIViewController {
     var type: EditType = .left
     
     fileprivate lazy var tableView: UITableView = {
-        let orientation = UIApplication.shared.statusBarOrientation
-        let frame: CGRect
-        
-        switch self.type {
-        case .right:
-            if orientation == .landscapeLeft || orientation == .landscapeRight {
-                frame = CGRect(x: 30.0,
-                               y: 0.0,
-                               width: self.view.frame.size.height - 30.0,
-                               height: self.view.frame.size.width)
-            } else {
-                frame = CGRect(x: 30.0,
-                               y: 0.0,
-                               width: self.view.frame.size.width - 30.0,
-                               height: self.view.frame.size.height)
-            }
-        case .left:
-            if orientation == .landscapeLeft || orientation == .landscapeRight {
-                frame = CGRect(x: 0.0,
-                               y: 0.0,
-                               width: self.view.frame.size.height - 30.0,
-                               height: self.view.frame.size.width)
-            } else {
-                frame = CGRect(x: 0.0,
-                               y: 0.0,
-                               width: self.view.frame.size.width - 30.0,
-                               height: self.view.frame.size.height)
-            }
-        }
-        
-        let v = UITableView(frame: frame, style: .plain)
+        let v = UITableView(frame: CGRect.zero, style: .plain)
         v.delegate = self
         v.dataSource = self
-        v.contentInset = UIEdgeInsets(top: 0.0,
-                                      left: 16.0,
-                                      bottom: 0.0,
-                                      right: 0.0)
+        
+        switch self.type {
+        case .left:
+            v.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        case .right:
+            v.contentInset = UIEdgeInsets(top: 0.0, left: 16.0, bottom: 0.0, right: 0.0)
+        }
+
+        
         return v
     }()
     
@@ -82,6 +57,7 @@ class EditController: UIViewController {
         field.delegate = self
         field.borderStyle = .roundedRect
         field.returnKeyType = .done
+        field.placeholder = "キーワードを入力"
         return field
     }()
     
@@ -94,7 +70,7 @@ class EditController: UIViewController {
         button.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 32.0)
         button.titleEdgeInsets = UIEdgeInsets(top: -5.0, left: 0.0, bottom: 0.0, right: 0.0)
         button.setTitle("+", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitleColor(UIColor.darkGray, for: .normal)
         button.backgroundColor = UIColor.clear
         button.titleLabel?.shadowColor = UIColor.black
         button.titleLabel?.shadowOffset = CGSize(width: 0.0, height: -1.0)
@@ -121,6 +97,10 @@ extension EditController {
         super.viewWillAppear(animated)
         
         NotificationCenter.default.addObserver(self, selector: #selector(EditController.orientationChanged(_:)), name: Notification.Name.UIDeviceOrientationDidChange, object: nil)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
         orientationChanged(nil)
     }
@@ -152,18 +132,18 @@ extension EditController {
             case .right:
                 tableView.frame = CGRect(x: 30.0,
                                          y: 0.0,
-                                         width: 320.0 - 30.0,
-                                         height: 480.0)
-                addField.frame = CGRect(x: 40.0,
+                                         width: view.frame.size.width - 30.0,
+                                         height: view.frame.size.height)
+                addField.frame = CGRect(x: 56.0,
                                         y: 5.0,
                                         width: 220.0,
                                         height: 34.0)
             case .left:
                 tableView.frame = CGRect(x: 0.0,
                                          y: 0.0,
-                                         width: 320.0 - 30.0,
-                                         height: 480.0)
-                addField.frame = CGRect(x: 0.0,
+                                         width: view.frame.size.width,
+                                         height: view.frame.size.height)
+                addField.frame = CGRect(x: 16.0,
                                         y: 5.0,
                                         width: 220.0,
                                         height: 34.0)
@@ -175,7 +155,7 @@ extension EditController {
                                      height: 44.0)
             addView.frame = CGRect(x: 0.0,
                                    y: 0.0,
-                                   width: 320.0,
+                                   width: view.frame.size.width,
                                    height: 44.0)
             
         case .landscapeLeft, .landscapeRight:
@@ -183,21 +163,21 @@ extension EditController {
             case .right:
                 tableView.frame = CGRect(x: 48.0,
                                          y: 0.0,
-                                         width: 480.0 - 48.0,
-                                         height: 320.0)
+                                         width: view.frame.size.height - 48.0,
+                                         height: view.frame.size.width)
                 addField.frame = CGRect(x: 48.0,
                                         y: 8.0,
-                                        width: 350.0,
+                                        width: view.frame.size.width + 30.0,
                                         height: 26.0)
                 
             case .left:
                 tableView.frame = CGRect(x: 0.0,
                                          y: 0.0,
-                                         width: 480.0 - 48.0,
-                                         height: 320.0)
+                                         width: view.frame.size.height - 48.0,
+                                         height: view.frame.size.width)
                 addField.frame = CGRect(x: 0.0,
                                         y: 8.0,
-                                        width: 350.0,
+                                        width: view.frame.size.width + 30.0,
                                         height: 26.0)
             }
             
@@ -207,7 +187,7 @@ extension EditController {
                                      height: 44.0)
             addView.frame = CGRect(x: 0.0,
                                    y: 0.0,
-                                   width: 480.0,
+                                   width: view.frame.size.height,
                                    height: 44.0)
         }
     }
